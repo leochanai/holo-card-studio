@@ -1,0 +1,8 @@
+.icon{display:inline-block;width:18px;height:18px;flex-shrink:0;vertical-align:-.2em;fill:currentColor;pointer-events:none}
+.actions button,.stage-hint button,.top-note,.save,footer button{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.actions .button-label{margin:0}.actions .icon{width:18px;height:18px}
+.stage-hint>span{display:inline-flex;align-items:center}.stage-hint .icon{width:18px;height:18px}
+.collectible>span .icon{width:25px;height:25px}.eyebrow>.icon{width:12px;height:12px}
+.header-link>span,.cta .arrow{display:inline-flex;align-items:center}.cta .icon{width:22px;height:22px}
+.open-card .icon{width:18px;height:18px}.close .icon{width:24px;height:24px}
+.card-picker select{appearance:none;background-image:url('./assets/phosphor/caret-down.svg');background-repeat:no-repeat;background-position:right 4px center;background-size:16px;padding-right:26px}
