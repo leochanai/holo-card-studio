@@ -6,7 +6,7 @@ Sites: https://neon-genesis-holo-cards.leochanai.chatgpt.site （访问受 Sites
 
 本地运行：`npm ci --prefix web`，然后 `npm start`。线上静态构建：`npm run build`，输出到 `dist/`。
 
-由 Blender 可编辑场景和 Three.js 交互详情页组成的机械恐龙卡片站点。首页保留两张精选卡，图鉴收录十张卡；详情默认开启自动赏卡，也支持拖动、翻面、缩放与光影调校。
+由 Blender 可编辑场景和 Three.js 交互详情页组成的机械恐龙卡片站点。首页保留两张精选卡，图鉴收录二十张卡；详情默认开启自动赏卡，也支持拖动、翻面、缩放与光影调校。
 
 本地启动：`node web/server.mjs`。首页：`http://127.0.0.1:4173/`；图鉴：`http://127.0.0.1:4173/gallery.html`。
 
@@ -22,6 +22,16 @@ Sites: https://neon-genesis-holo-cards.leochanai.chatgpt.site （访问受 Sites
 | 008 | 机械南方巨兽龙 | 风暴高原 / STORM PLATEAU | `http://127.0.0.1:4173/card.html?card=008` |
 | 009 | 机械角鼻龙 | 地下水晶洞 / CRYSTAL CAVERN | `http://127.0.0.1:4173/card.html?card=009` |
 | 010 | 机械重爪龙 | 红树林河道 / MANGROVE CHANNEL | `http://127.0.0.1:4173/card.html?card=010` |
+| 011 | 机械三角龙 | 苏铁林缘 / CYCAD FOREST | `http://127.0.0.1:4173/card.html?card=011` |
+| 012 | 机械剑龙 | 晚霞蕨原 / SUNSET FERNLAND | `http://127.0.0.1:4173/card.html?card=012` |
+| 013 | 机械甲龙 | 苔岩山谷 / MOSSY VALLEY | `http://127.0.0.1:4173/card.html?card=013` |
+| 014 | 机械腕龙 | 云雾杉林 / MISTY CONIFERS | `http://127.0.0.1:4173/card.html?card=014` |
+| 015 | 机械梁龙 | 银光河滩 / SILVER RIVERBANK | `http://127.0.0.1:4173/card.html?card=015` |
+| 016 | 机械迷惑龙 | 金色平原 / GOLDEN PLAINS | `http://127.0.0.1:4173/card.html?card=016` |
+| 017 | 机械禽龙 | 银杏林地 / GINKGO WOODLAND | `http://127.0.0.1:4173/card.html?card=017` |
+| 018 | 机械副栉龙 | 回声湖畔 / ECHO LAKESHORE | `http://127.0.0.1:4173/card.html?card=018` |
+| 019 | 机械慈母龙 | 蕨谷绿洲 / FERN OASIS | `http://127.0.0.1:4173/card.html?card=019` |
+| 020 | 机械戟龙 | 紫晶林地 / AMETHYST GROVE | `http://127.0.0.1:4173/card.html?card=020` |
 
 Git 仓库仅保留网站运行素材、配置和生成脚本。`assets/`、`cards/*/assets/`、`*.blend` 与 `renders/` 制作素材和离线效果图仅保留在制作机器本地，不随克隆下载；重新生成卡片需另外恢复这些源素材。
 
@@ -36,3 +46,7 @@ GLB 包含真实卡牌网格及 `web_front`、`web_edge`、`web_back`、`web_gol
 ### 本批网页检查
 
 No.003–010 已逐张在内置浏览器中检查实际卡面；十张缩略图均加载。棘龙卡完成翻面、左右拖动、镭射、缩放、前后景深控制检查。390×844 下图鉴与最长标题详情无横向溢出。最终检查期间无新增控制台错误。页面截图和记录在 `cards/qa/`。保存按钮已触发，但浏览器未返回下载事件，因此下载成功尚未确认；可直接使用各卡 `renders/` 中的成品 PNG。
+
+新增食草恐龙 No.011–020 的文案与场景定义位于 `cards/batch-011-020.json`，沿用现有分层素材与 Blender 制作流程。恢复源素材后，执行 `python3 scripts/produce_batch.py 011 012 013 014 015 016 017 018 019 020` 可重建本批卡片。
+
+No.011–020 已生成真实透明贴图、独立 Blender 工程、GLB 与三视图，并通过资源、配置、模型材质和 HTTP 链接审计（`cards/herbivore-verification.json`）。本批已检查离线卡面；未追加浏览器交互测试。

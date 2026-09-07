@@ -1,0 +1,32 @@
+{
+  "title": "机械迷惑龙",
+  "subtitle": "CYBERNETIC APATOSAURUS",
+  "technique": "巨躯踏原",
+  "tagline": "厚颈披光 · 重步行原",
+  "edition": "No.016",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "粗壮颈部与厚重躯干覆盖层叠装甲。机械迷惑龙穿过金色平原，脚下扬起细尘。",
+  "habitat": "GOLDEN PLAINS",
+  "backMark": "APATO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/016/assets/subject.png",
+    "background": "./cards/016/assets/background.png",
+    "text": "./cards/016/assets/text.png",
+    "lineart": "./cards/016/assets/lineart.png",
+    "model": "./cards/016/assets/card.glb"
+  }
+}

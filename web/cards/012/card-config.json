@@ -1,0 +1,32 @@
+{
+  "title": "机械剑龙",
+  "subtitle": "CYBERNETIC STEGOSAURUS",
+  "technique": "背剑映霞",
+  "tagline": "背剑迎光 · 长尾守望",
+  "edition": "No.012",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "成列背板映出铜色晚霞，尾端尖刺闪过冷光。机械剑龙穿行开阔蕨原。",
+  "habitat": "SUNSET FERNLAND",
+  "backMark": "STEGO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/012/assets/subject.png",
+    "background": "./cards/012/assets/background.png",
+    "text": "./cards/012/assets/text.png",
+    "lineart": "./cards/012/assets/lineart.png",
+    "model": "./cards/012/assets/card.glb"
+  }
+}

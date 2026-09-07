@@ -1,0 +1,32 @@
+{
+  "title": "机械梁龙",
+  "subtitle": "CYBERNETIC DIPLODOCUS",
+  "technique": "银尾逐水",
+  "tagline": "长尾如鞭 · 循河而行",
+  "edition": "No.015",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "细长颈尾舒展成流动的弧线，银色装甲映出水纹。机械梁龙沿着河滩缓缓前行。",
+  "habitat": "SILVER RIVERBANK",
+  "backMark": "DIPLO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./web/assets/card.glb"
+  }
+}

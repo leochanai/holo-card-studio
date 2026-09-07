@@ -16,7 +16,7 @@ FONT = '/System/Library/Fonts/STHeiti Medium.ttc'
 
 
 def load_batch() -> dict[str, dict]:
-    data = json.loads((ROOT / 'cards' / 'batch-003-010.json').read_text(encoding='utf-8'))
+    data = [item for path in sorted((ROOT / 'cards').glob('batch-*.json')) if path.stem[6:9].isdigit() for item in json.loads(path.read_text(encoding='utf-8'))]
     return {item['id']: item for item in data}
 
 
@@ -162,7 +162,7 @@ def prepare(item: dict) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description='Prepare one or more batch card source directories.')
     parser.add_argument('ids', nargs='*', help='Card IDs, e.g. 003 004')
-    parser.add_argument('--all', action='store_true', help='Prepare all entries in cards/batch-003-010.json.')
+    parser.add_argument('--all', action='store_true', help='Prepare all entries in cards/batch-NNN-NNN.json.')
     args = parser.parse_args()
     batch = load_batch(); ids = list(batch) if args.all or not args.ids else args.ids
     unknown = [card_id for card_id in ids if card_id not in batch]

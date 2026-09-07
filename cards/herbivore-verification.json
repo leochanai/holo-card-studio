@@ -1,0 +1,2286 @@
+{
+  "cards": [
+    {
+      "id": "011",
+      "source_config": {
+        "path": "cards/011/card-config.json",
+        "exists": true,
+        "edition": "No.011",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/011/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7576,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/011/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/011/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 36.0,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.016147,
+          "white_fraction": 0.938077
+        },
+        "text": {
+          "path": "cards/011/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.965,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/011/card-config.json",
+        "expected_edition": "No.011",
+        "status": 200,
+        "edition": "No.011",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/011/assets/subject.png",
+            "local_path": "web/cards/011/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "42036ec989e84eae403f1ba8b9f3365d7b79ee1774bfdaf0c6351d89108ba788",
+            "local_sha256": "42036ec989e84eae403f1ba8b9f3365d7b79ee1774bfdaf0c6351d89108ba788",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/011/assets/background.png",
+            "local_path": "web/cards/011/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "2cdab0863dcf0b8253ba5b686ed38dae7342648c67471dbcb6e35a6f69bf9846",
+            "local_sha256": "2cdab0863dcf0b8253ba5b686ed38dae7342648c67471dbcb6e35a6f69bf9846",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/011/assets/text.png",
+            "local_path": "web/cards/011/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "1bcca1362aba5bba28dcaa521a59c7c3f114158700f3a851f650d06afadcca14",
+            "local_sha256": "1bcca1362aba5bba28dcaa521a59c7c3f114158700f3a851f650d06afadcca14",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/011/assets/lineart.png",
+            "local_path": "web/cards/011/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "a50ac22ead2266585eaa25a55816706cb65d15861addcdca7c05803c2e862f8b",
+            "local_sha256": "a50ac22ead2266585eaa25a55816706cb65d15861addcdca7c05803c2e862f8b",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/011/assets/card.glb",
+            "local_path": "web/cards/011/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/011/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/011/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "a29971334bd8bc04664bf8d38bd83360991b720b519923ecfe57a7f44476e65e"
+        },
+        "tilt-left": {
+          "path": "cards/011/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "6490980386b7fdd71866bb6f371edba4e2e99392ee3be11514ef85b8f0b0f3b7"
+        },
+        "tilt-right": {
+          "path": "cards/011/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "5098f622a73300891dcb5862a02cfc4a57f624045962c44b7bcd90fc42b188ae"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/011.png",
+        "exists": true,
+        "sha256": "a29971334bd8bc04664bf8d38bd83360991b720b519923ecfe57a7f44476e65e",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/011/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "012",
+      "source_config": {
+        "path": "cards/012/card-config.json",
+        "exists": true,
+        "edition": "No.012",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/012/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7702,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/012/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/012/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 81.71,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.005537,
+          "white_fraction": 0.937119
+        },
+        "text": {
+          "path": "cards/012/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9658,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/012/card-config.json",
+        "expected_edition": "No.012",
+        "status": 200,
+        "edition": "No.012",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/012/assets/subject.png",
+            "local_path": "web/cards/012/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "2c9ffda4bea1def5f6c0079d2e2b812bcd2d4af42eb6855c4fe3e7e9648c7521",
+            "local_sha256": "2c9ffda4bea1def5f6c0079d2e2b812bcd2d4af42eb6855c4fe3e7e9648c7521",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/012/assets/background.png",
+            "local_path": "web/cards/012/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "04c7b592976dfac0f0cc9689f77b668681b34766206c58f6419c5d059b51a499",
+            "local_sha256": "04c7b592976dfac0f0cc9689f77b668681b34766206c58f6419c5d059b51a499",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/012/assets/text.png",
+            "local_path": "web/cards/012/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "d6be1ff6c3dd411858ad26004323ebde0fa1c9f70b782790328cf04d9ef3d665",
+            "local_sha256": "d6be1ff6c3dd411858ad26004323ebde0fa1c9f70b782790328cf04d9ef3d665",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/012/assets/lineart.png",
+            "local_path": "web/cards/012/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "e8e1562d1f3af6fc348e2bf4898128779e4578cad24ee5e051707eefd791d5d2",
+            "local_sha256": "e8e1562d1f3af6fc348e2bf4898128779e4578cad24ee5e051707eefd791d5d2",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/012/assets/card.glb",
+            "local_path": "web/cards/012/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/012/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/012/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "e34d44cda66d83380f7cd4164a39b4737770fa658af683ff63e78a615db55e50"
+        },
+        "tilt-left": {
+          "path": "cards/012/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "59a8b2367c61abec85f918bdc8f51a6f3c47a41e5573db9d56968331c1325bf7"
+        },
+        "tilt-right": {
+          "path": "cards/012/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "fe88b7f185532288947f15b91b393c946fe77df96d6c6f4a196757fa7f9814cd"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/012.png",
+        "exists": true,
+        "sha256": "e34d44cda66d83380f7cd4164a39b4737770fa658af683ff63e78a615db55e50",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/012/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "013",
+      "source_config": {
+        "path": "cards/013/card-config.json",
+        "exists": true,
+        "edition": "No.013",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/013/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7569,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/013/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/013/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 50.64,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.012585,
+          "white_fraction": 0.939873
+        },
+        "text": {
+          "path": "cards/013/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9661,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/013/card-config.json",
+        "expected_edition": "No.013",
+        "status": 200,
+        "edition": "No.013",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/013/assets/subject.png",
+            "local_path": "web/cards/013/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "a71adbfb312421a42d6d09a802a43f9982fc511a0951ee78fa28e2d0c26a7f9a",
+            "local_sha256": "a71adbfb312421a42d6d09a802a43f9982fc511a0951ee78fa28e2d0c26a7f9a",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/013/assets/background.png",
+            "local_path": "web/cards/013/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "ee15797d25c32e08d5027ae474cefe5807a2db3549d2f7e0e9ef5a2a27dddc42",
+            "local_sha256": "ee15797d25c32e08d5027ae474cefe5807a2db3549d2f7e0e9ef5a2a27dddc42",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/013/assets/text.png",
+            "local_path": "web/cards/013/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "633d87454464bb977815bd1b35225ea6b730b0f7220145cde21b368a4550e053",
+            "local_sha256": "633d87454464bb977815bd1b35225ea6b730b0f7220145cde21b368a4550e053",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/013/assets/lineart.png",
+            "local_path": "web/cards/013/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "1578bd674327eb646729295f8b79ee89b8e152f77450117fdac4b6b0d0bbbf5a",
+            "local_sha256": "1578bd674327eb646729295f8b79ee89b8e152f77450117fdac4b6b0d0bbbf5a",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/013/assets/card.glb",
+            "local_path": "web/cards/013/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/013/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/013/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "1414fb460f0254830b1330f95f6764ae449b14622e3364a2c2f4c8bc3e441898"
+        },
+        "tilt-left": {
+          "path": "cards/013/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "9556765239e63580cfc5ac1ca08c70ea8aa34cb658d2f1a3f139975b200c230a"
+        },
+        "tilt-right": {
+          "path": "cards/013/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "46e02aea55463b593d778cc7d4667d24c63eec35cdfb612c38d7938a18d97ffc"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/013.png",
+        "exists": true,
+        "sha256": "1414fb460f0254830b1330f95f6764ae449b14622e3364a2c2f4c8bc3e441898",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/013/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "014",
+      "source_config": {
+        "path": "cards/014/card-config.json",
+        "exists": true,
+        "edition": "No.014",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/014/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7934,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/014/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/014/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 91.43,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.004742,
+          "white_fraction": 0.936036
+        },
+        "text": {
+          "path": "cards/014/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9661,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/014/card-config.json",
+        "expected_edition": "No.014",
+        "status": 200,
+        "edition": "No.014",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/014/assets/subject.png",
+            "local_path": "web/cards/014/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "4949535ef78eced7b58b1f4f0f5c70f2831aea26a75654b2b6c3f15ccdb129ca",
+            "local_sha256": "4949535ef78eced7b58b1f4f0f5c70f2831aea26a75654b2b6c3f15ccdb129ca",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/014/assets/background.png",
+            "local_path": "web/cards/014/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "d984982749c80fb4e0e28cd90a7562ae49e55c6665614f819b3e0a746bba1ffd",
+            "local_sha256": "d984982749c80fb4e0e28cd90a7562ae49e55c6665614f819b3e0a746bba1ffd",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/014/assets/text.png",
+            "local_path": "web/cards/014/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "3baa07d420b07a5070988dca245e63a9a42ebcbf0c68e2d4fd9c3fed58b2cf9e",
+            "local_sha256": "3baa07d420b07a5070988dca245e63a9a42ebcbf0c68e2d4fd9c3fed58b2cf9e",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/014/assets/lineart.png",
+            "local_path": "web/cards/014/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "a2800b4f9cc06b46cd461c58ea65528efc7d8e7ed3f8aa91f9e7609e47a1a2a9",
+            "local_sha256": "a2800b4f9cc06b46cd461c58ea65528efc7d8e7ed3f8aa91f9e7609e47a1a2a9",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/014/assets/card.glb",
+            "local_path": "web/cards/014/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/014/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/014/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "90c806bf2a68f2b544d45b3bb69e8dc9cdec72ee2960751f1c7ec5d99bf6ec04"
+        },
+        "tilt-left": {
+          "path": "cards/014/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "e6f00b1206dcad35e4bddb5b134d8f4c09243d21200b897e3867f9ad8d2d5ffa"
+        },
+        "tilt-right": {
+          "path": "cards/014/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "5ff1a0507a5015481966f748e3b7a6b5042ee0dc490336b44825f04668e15cd9"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/014.png",
+        "exists": true,
+        "sha256": "90c806bf2a68f2b544d45b3bb69e8dc9cdec72ee2960751f1c7ec5d99bf6ec04",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/014/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "015",
+      "source_config": {
+        "path": "cards/015/card-config.json",
+        "exists": true,
+        "edition": "No.015",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/015/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.8511,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/015/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/015/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.28,
+          "luma_p1": 95.36,
+          "luma_p99": 255.0,
+          "p99_minus_min": 254.72,
+          "dark_fraction": 0.004789,
+          "white_fraction": 0.960542
+        },
+        "text": {
+          "path": "cards/015/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9662,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/015/card-config.json",
+        "expected_edition": "No.015",
+        "status": 200,
+        "edition": "No.015",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/015/assets/subject.png",
+            "local_path": "web/cards/015/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "742ab30362296700c000166c7f3d653c9be722573d2028e82d7247c3e577dff3",
+            "local_sha256": "742ab30362296700c000166c7f3d653c9be722573d2028e82d7247c3e577dff3",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/015/assets/background.png",
+            "local_path": "web/cards/015/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "701a9ac023bca485a7f19611abc4da76532151b815ab4a2a9133c5fac569e468",
+            "local_sha256": "701a9ac023bca485a7f19611abc4da76532151b815ab4a2a9133c5fac569e468",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/015/assets/text.png",
+            "local_path": "web/cards/015/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "4141ae68999a09920bc3eb44444ac7d8f31b4895eb682c776e954050598a2ee4",
+            "local_sha256": "4141ae68999a09920bc3eb44444ac7d8f31b4895eb682c776e954050598a2ee4",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/015/assets/lineart.png",
+            "local_path": "web/cards/015/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "37b01e1932526179f66c53709c1b591fbbf1b76985cf795f4ffc614a60aa5940",
+            "local_sha256": "37b01e1932526179f66c53709c1b591fbbf1b76985cf795f4ffc614a60aa5940",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/015/assets/card.glb",
+            "local_path": "web/cards/015/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/015/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/015/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "13f095ffd245f5ace6cbc35895c290f2b504a16b4bafc80b226d3656e188b2d1"
+        },
+        "tilt-left": {
+          "path": "cards/015/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "f8296b03459c2c10d14e4853fd132b6bcdcedd336545d0a99bbd97c0f2be8849"
+        },
+        "tilt-right": {
+          "path": "cards/015/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "0722379981dd713db088254b45938b2972569d31bc41dfbd1a5c3913544d7d16"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/015.png",
+        "exists": true,
+        "sha256": "13f095ffd245f5ace6cbc35895c290f2b504a16b4bafc80b226d3656e188b2d1",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/015/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "016",
+      "source_config": {
+        "path": "cards/016/card-config.json",
+        "exists": true,
+        "edition": "No.016",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/016/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7538,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/016/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/016/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 56.79,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.012423,
+          "white_fraction": 0.928811
+        },
+        "text": {
+          "path": "cards/016/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9633,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/016/card-config.json",
+        "expected_edition": "No.016",
+        "status": 200,
+        "edition": "No.016",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/016/assets/subject.png",
+            "local_path": "web/cards/016/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "1c260730ad72aa7a51cbf4ccd9b51352683bc4d4e2dbb884027a4c4340a8aa09",
+            "local_sha256": "1c260730ad72aa7a51cbf4ccd9b51352683bc4d4e2dbb884027a4c4340a8aa09",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/016/assets/background.png",
+            "local_path": "web/cards/016/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "eff760306b1be365c900df8f6fc8f8779a9dbdb3b703755ec8df4bbab6890659",
+            "local_sha256": "eff760306b1be365c900df8f6fc8f8779a9dbdb3b703755ec8df4bbab6890659",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/016/assets/text.png",
+            "local_path": "web/cards/016/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "52fbdc01ed5b1943fc1697d6d4c84f9a2e7d8267bde81c6c5f1365c60a2ade31",
+            "local_sha256": "52fbdc01ed5b1943fc1697d6d4c84f9a2e7d8267bde81c6c5f1365c60a2ade31",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/016/assets/lineart.png",
+            "local_path": "web/cards/016/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "2f9ff1387b5e852a481cce43f500b25f8a66bd7aecbe7f54906c3023e3874d89",
+            "local_sha256": "2f9ff1387b5e852a481cce43f500b25f8a66bd7aecbe7f54906c3023e3874d89",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/016/assets/card.glb",
+            "local_path": "web/cards/016/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/016/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/016/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "4cdeae7c0f4aca1aabc31fb12252f5482c5c1c591feb16e9b49a25ea97efad68"
+        },
+        "tilt-left": {
+          "path": "cards/016/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "3cdb3a461fd32acf0e7cfad6ab3939283ab543d39610d7ba7b18036d76c9064f"
+        },
+        "tilt-right": {
+          "path": "cards/016/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "070311fcb582b0a3c7f188e7911d737209a1c20af0dd8ddcdc65b13ec5b2b075"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/016.png",
+        "exists": true,
+        "sha256": "4cdeae7c0f4aca1aabc31fb12252f5482c5c1c591feb16e9b49a25ea97efad68",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/016/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "017",
+      "source_config": {
+        "path": "cards/017/card-config.json",
+        "exists": true,
+        "edition": "No.017",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/017/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7301,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/017/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/017/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 50.72,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.013683,
+          "white_fraction": 0.941175
+        },
+        "text": {
+          "path": "cards/017/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9657,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/017/card-config.json",
+        "expected_edition": "No.017",
+        "status": 200,
+        "edition": "No.017",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/017/assets/subject.png",
+            "local_path": "web/cards/017/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "d93545ec29a422cbfb52a10d04e90883b9d69ee055b5d47827bd94605cff968d",
+            "local_sha256": "d93545ec29a422cbfb52a10d04e90883b9d69ee055b5d47827bd94605cff968d",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/017/assets/background.png",
+            "local_path": "web/cards/017/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "a54913f4632ade9645a2b9de102d00b295457631d8e0873402f27c94b783d072",
+            "local_sha256": "a54913f4632ade9645a2b9de102d00b295457631d8e0873402f27c94b783d072",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/017/assets/text.png",
+            "local_path": "web/cards/017/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "81c4b2a3f334786765298d7c3cd7cbd9c7a6541a8c21b8348542cf3fbb7bc422",
+            "local_sha256": "81c4b2a3f334786765298d7c3cd7cbd9c7a6541a8c21b8348542cf3fbb7bc422",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/017/assets/lineart.png",
+            "local_path": "web/cards/017/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "02b1004054592f090d598555a4f04c64fd0c165c71d251626019181c8e5d5a21",
+            "local_sha256": "02b1004054592f090d598555a4f04c64fd0c165c71d251626019181c8e5d5a21",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/017/assets/card.glb",
+            "local_path": "web/cards/017/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/017/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/017/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "49091fd38bb56ddbb62a5ac34da47762b818d508788b1a0f00f58d43e29b1ff9"
+        },
+        "tilt-left": {
+          "path": "cards/017/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "a14c5c5946ed705f6aabf544914f901290c460a06a84806729dd7b9bd42bdeeb"
+        },
+        "tilt-right": {
+          "path": "cards/017/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "27ca89f44a949b2cf83831f79259f1fc8b88c5d20e140d306bddf56da5e7a398"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/017.png",
+        "exists": true,
+        "sha256": "49091fd38bb56ddbb62a5ac34da47762b818d508788b1a0f00f58d43e29b1ff9",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/017/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "018",
+      "source_config": {
+        "path": "cards/018/card-config.json",
+        "exists": true,
+        "edition": "No.018",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/018/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.8011,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/018/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/018/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 48.0,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.014644,
+          "white_fraction": 0.943326
+        },
+        "text": {
+          "path": "cards/018/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9639,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/018/card-config.json",
+        "expected_edition": "No.018",
+        "status": 200,
+        "edition": "No.018",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/018/assets/subject.png",
+            "local_path": "web/cards/018/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "10fd0bb005607b82645c09ef458f4d3e11fdefd0608a8e4b23642c8a591d7b89",
+            "local_sha256": "10fd0bb005607b82645c09ef458f4d3e11fdefd0608a8e4b23642c8a591d7b89",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/018/assets/background.png",
+            "local_path": "web/cards/018/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "681206f9d61be6d41d770a26cf55c0197075a768bada9ea5fea7fe8c1d97b59e",
+            "local_sha256": "681206f9d61be6d41d770a26cf55c0197075a768bada9ea5fea7fe8c1d97b59e",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/018/assets/text.png",
+            "local_path": "web/cards/018/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "681d97ca20252bb21921f9c3083fe3851e2ef93ba546ef2477ef9685e0ced93e",
+            "local_sha256": "681d97ca20252bb21921f9c3083fe3851e2ef93ba546ef2477ef9685e0ced93e",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/018/assets/lineart.png",
+            "local_path": "web/cards/018/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "7212dc5967a2faf38aea079ca0326bdfc4a9e034bdf07714bd66908f82a7fe45",
+            "local_sha256": "7212dc5967a2faf38aea079ca0326bdfc4a9e034bdf07714bd66908f82a7fe45",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/018/assets/card.glb",
+            "local_path": "web/cards/018/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/018/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/018/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "b50f78f87f5bbfbc0ecf5e11900398b0ee454bfd99d55474c3f6295e37f24c86"
+        },
+        "tilt-left": {
+          "path": "cards/018/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "83bc18e7aac4cbf85647aac52fda309247b7d6ac857be0d6b5c536a3f7900e99"
+        },
+        "tilt-right": {
+          "path": "cards/018/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "88d296555aedc56d14a89b7c842dbf1d1f5ec7bd719878d07ae1cc3625c396c6"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/018.png",
+        "exists": true,
+        "sha256": "b50f78f87f5bbfbc0ecf5e11900398b0ee454bfd99d55474c3f6295e37f24c86",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/018/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "019",
+      "source_config": {
+        "path": "cards/019/card-config.json",
+        "exists": true,
+        "edition": "No.019",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/019/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7472,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/019/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/019/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 37.85,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.016602,
+          "white_fraction": 0.917816
+        },
+        "text": {
+          "path": "cards/019/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9642,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/019/card-config.json",
+        "expected_edition": "No.019",
+        "status": 200,
+        "edition": "No.019",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/019/assets/subject.png",
+            "local_path": "web/cards/019/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "5030be6a559b7b0a2f9130de17077e3899a41631d43539acb06c8debc024fd25",
+            "local_sha256": "5030be6a559b7b0a2f9130de17077e3899a41631d43539acb06c8debc024fd25",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/019/assets/background.png",
+            "local_path": "web/cards/019/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "19dfc349b20483ad466eb73754f647a37816d1cf04c01c663689f98409ab9d72",
+            "local_sha256": "19dfc349b20483ad466eb73754f647a37816d1cf04c01c663689f98409ab9d72",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/019/assets/text.png",
+            "local_path": "web/cards/019/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "071bc91cd8e144fae6627887b8e6e47c6b9a2310f35ce59d27207bb0e549bd40",
+            "local_sha256": "071bc91cd8e144fae6627887b8e6e47c6b9a2310f35ce59d27207bb0e549bd40",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/019/assets/lineart.png",
+            "local_path": "web/cards/019/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "207036103a216823c8076ab108294a92a1a2424de17277fe0732f41e4a36200c",
+            "local_sha256": "207036103a216823c8076ab108294a92a1a2424de17277fe0732f41e4a36200c",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/019/assets/card.glb",
+            "local_path": "web/cards/019/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/019/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/019/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "ee2213e60c1087bf07225668d017ad24a7b214830f7c6a2aa3ffd55b22a4e6a4"
+        },
+        "tilt-left": {
+          "path": "cards/019/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "4c6b5e5f409a609e148555e944fcd3117955cf68697b37f403d7f1a9c0b13b48"
+        },
+        "tilt-right": {
+          "path": "cards/019/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "607d34fa9d37cbbffbb34e5c205d17cfddc78cffcd923942f3eac3b934c8d324"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/019.png",
+        "exists": true,
+        "sha256": "ee2213e60c1087bf07225668d017ad24a7b214830f7c6a2aa3ffd55b22a4e6a4",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/019/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    },
+    {
+      "id": "020",
+      "source_config": {
+        "path": "cards/020/card-config.json",
+        "exists": true,
+        "edition": "No.020",
+        "asset_paths": {
+          "subject": {
+            "configured_path": "./assets/subject.png",
+            "exists": true
+          },
+          "background": {
+            "configured_path": "./assets/background.png",
+            "exists": true
+          },
+          "lineart": {
+            "configured_path": "./assets/lineart.png",
+            "exists": true
+          },
+          "text": {
+            "configured_path": "./assets/text.png",
+            "exists": true
+          },
+          "model": {
+            "configured_path": "./web/assets/card.glb",
+            "exists": true
+          }
+        },
+        "valid": true
+      },
+      "layers": {
+        "subject": {
+          "path": "cards/020/assets/subject.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.7092,
+          "has_real_alpha": true,
+          "valid": true
+        },
+        "background": {
+          "path": "cards/020/assets/background.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true
+        },
+        "lineart": {
+          "path": "cards/020/assets/lineart.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "has_real_alpha": false,
+          "valid": true,
+          "luma_min": 0.0,
+          "luma_p1": 57.15,
+          "luma_p99": 255.0,
+          "p99_minus_min": 255.0,
+          "dark_fraction": 0.011406,
+          "white_fraction": 0.938951
+        },
+        "text": {
+          "path": "cards/020/assets/text.png",
+          "exists": true,
+          "size": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "transparent_fraction": 0.9648,
+          "has_real_alpha": true,
+          "valid": true
+        }
+      },
+      "published_config": {
+        "url": "http://127.0.0.1:4173/cards/020/card-config.json",
+        "expected_edition": "No.020",
+        "status": 200,
+        "edition": "No.020",
+        "assets": {
+          "subject": {
+            "url": "http://127.0.0.1:4173/cards/020/assets/subject.png",
+            "local_path": "web/cards/020/assets/subject.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "3ef58f1209e05b4706b0b31ce834fc64a036fa97ce26b158ffdf34387c2f3937",
+            "local_sha256": "3ef58f1209e05b4706b0b31ce834fc64a036fa97ce26b158ffdf34387c2f3937",
+            "valid": true
+          },
+          "background": {
+            "url": "http://127.0.0.1:4173/cards/020/assets/background.png",
+            "local_path": "web/cards/020/assets/background.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "57afc79b2c7c2dcbc5f9b7e25619508214c748c1092d8fe0cb2103aab3915074",
+            "local_sha256": "57afc79b2c7c2dcbc5f9b7e25619508214c748c1092d8fe0cb2103aab3915074",
+            "valid": true
+          },
+          "text": {
+            "url": "http://127.0.0.1:4173/cards/020/assets/text.png",
+            "local_path": "web/cards/020/assets/text.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "e57b3d975683603446a8867bba2565221b807198834e2b0b5504faac2396ef97",
+            "local_sha256": "e57b3d975683603446a8867bba2565221b807198834e2b0b5504faac2396ef97",
+            "valid": true
+          },
+          "lineart": {
+            "url": "http://127.0.0.1:4173/cards/020/assets/lineart.png",
+            "local_path": "web/cards/020/assets/lineart.png",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "0fb27c7241fbf0eba4f50b7ecec29fe22c143a9adfd402498bc8bdbdab9a3ebf",
+            "local_sha256": "0fb27c7241fbf0eba4f50b7ecec29fe22c143a9adfd402498bc8bdbdab9a3ebf",
+            "valid": true
+          },
+          "model": {
+            "url": "http://127.0.0.1:4173/cards/020/assets/card.glb",
+            "local_path": "web/cards/020/assets/card.glb",
+            "local_exists": true,
+            "status": 200,
+            "http_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "local_sha256": "fab47e7f4042e640c2a8aee1ff046e71d09312220fd578fcb70c65b7b143cb5e",
+            "valid": true
+          }
+        },
+        "valid": true
+      },
+      "glb": {
+        "path": "web/cards/020/assets/card.glb",
+        "exists": true,
+        "header_valid": true,
+        "mesh_count": 3,
+        "material_names": [
+          "web_front",
+          "web_edge",
+          "web_back",
+          "web_gold"
+        ],
+        "required_materials": [
+          "web_back",
+          "web_edge",
+          "web_front",
+          "web_gold"
+        ],
+        "valid": true
+      },
+      "renders": {
+        "hero": {
+          "path": "cards/020/renders/hero.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "509c44d99b68ce2821a7aac2f0b836658e18250350f8b03e3d940ddf9a8da68d"
+        },
+        "tilt-left": {
+          "path": "cards/020/renders/tilt-left.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "836e93205cb11529faf4b270a661dcc3911414aa2b914f25750acd2a79e1478d"
+        },
+        "tilt-right": {
+          "path": "cards/020/renders/tilt-right.png",
+          "exists": true,
+          "format": "PNG",
+          "size": [
+            1080,
+            1500
+          ],
+          "mode": "RGBA",
+          "valid": true,
+          "sha256": "b5eca1c2719d4eda0a03fc3edbae7fca183365be3f1276207e72a7995e06a1de"
+        }
+      },
+      "render_views_distinct": true,
+      "preview": {
+        "path": "web/previews/020.png",
+        "exists": true,
+        "sha256": "509c44d99b68ce2821a7aac2f0b836658e18250350f8b03e3d940ddf9a8da68d",
+        "matches_hero": true
+      },
+      "verification": {
+        "path": "cards/020/verification.json",
+        "exists": true,
+        "plane_rotations": {
+          "主体平面 · 完整视差合成": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "文字平面 · Alpha PNG": [
+            90.0,
+            0.0,
+            0.0
+          ],
+          "背景平面 · 已在主体材质合成": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "planes_x90": true,
+        "packed_images": true,
+        "valid": true
+      },
+      "valid": true
+    }
+  ],
+  "valid": true,
+  "browserInteractionTested": false
+}

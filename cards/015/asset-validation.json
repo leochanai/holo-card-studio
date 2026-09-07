@@ -1,0 +1,39 @@
+{
+  "id": "015",
+  "subject_source_size": [
+    1024,
+    1536
+  ],
+  "subject_alpha_method": "edge_connected_white_removed",
+  "subject": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "transparent_fraction": 0.8511,
+    "visible_fraction": 0.1489
+  },
+  "background": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB"
+  },
+  "lineart": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB"
+  },
+  "text": {
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "transparent_fraction": 0.9662
+  }
+}

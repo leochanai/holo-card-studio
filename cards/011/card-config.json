@@ -1,0 +1,32 @@
+{
+  "title": "机械三角龙",
+  "subtitle": "CYBERNETIC TRICERATOPS",
+  "technique": "林缘重盾",
+  "tagline": "三角列阵 · 重盾护林",
+  "edition": "No.011",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "宽大的颈盾承接林间微光，三枚金属角划开晨雾。机械三角龙缓步巡过苏铁林缘。",
+  "habitat": "CYCAD FOREST",
+  "backMark": "TRI",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./web/assets/card.glb"
+  }
+}

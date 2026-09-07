@@ -1,0 +1,32 @@
+{
+  "title": "机械禽龙",
+  "subtitle": "CYBERNETIC IGUANODON",
+  "technique": "棘指巡林",
+  "tagline": "棘指藏锋 · 绿影巡游",
+  "edition": "No.017",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "拇指尖刺隐在机械前肢之间，喙部轻触低垂叶片。机械禽龙穿行银杏林地。",
+  "habitat": "GINKGO WOODLAND",
+  "backMark": "IGUAN",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/017/assets/subject.png",
+    "background": "./cards/017/assets/background.png",
+    "text": "./cards/017/assets/text.png",
+    "lineart": "./cards/017/assets/lineart.png",
+    "model": "./cards/017/assets/card.glb"
+  }
+}

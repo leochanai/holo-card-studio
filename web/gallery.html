@@ -8,13 +8,14 @@
 <header class="site-header"><a class="brand" href="./" aria-label="霓虹纪元首页"><span class="seal">NG</span><span>霓虹纪元<small>NEON GENESIS</small></span></a><span class="header-note">MECHANICAL LIFE ARCHIVE</span><a class="header-link" href="./gallery.html" aria-current="page">卡片图鉴 <span><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></span></a></header>
 <main class="gallery-main">
 <nav class="breadcrumb" aria-label="当前位置"><a href="./">首页</a><span aria-hidden="true">/</span><span aria-current="page">卡片图鉴</span></nav>
-<div class="gallery-heading"><div><p class="eyebrow">COLLECTION 01 / 霓虹纪元</p><h1>机械物种图鉴</h1><p>选择一张闪卡，走进它的世界。<br>转动、翻面，探索光与机械的另一种可能。</p></div><div class="card-count"><strong>10</strong>张已收录</div></div>
+<div class="gallery-heading"><div><p class="eyebrow">COLLECTION 01 / 霓虹纪元</p><h1>机械物种图鉴</h1><p>选择一张闪卡，走进它的世界。<br>转动、翻面，探索光与机械的另一种可能。</p></div><div class="card-count"><strong>20</strong>张已收录</div></div>
 <section id="gallery-grid" class="gallery-grid" aria-label="全部闪卡"></section>
 
 </main>
 <footer class="site-footer"><span class="collection-signature"><span class="seal" aria-hidden="true">NG</span><span>NEON GENESIS<small>MECHANICAL LIFE ARCHIVE</small></span></span><span class="footer-message">光随手动，画有余深。<small>DESIGNED TO BE SEEN IN MOTION</small></span></footer>
 <script type="module">
 import {catalog} from './catalog.js';
+document.querySelector('.card-count strong').textContent=catalog.length;
 document.querySelector('#gallery-grid').innerHTML=catalog.map(card=>`<a class="specimen ${card.accent}" href="./card.html?card=${card.id}" aria-label="查看 No.${card.id} ${card.title}详情"><div class="specimen-art"><div class="card-window"><img src="./previews/${card.id}.png" width="1080" height="1500" alt="${card.title}卡面插画预览"></div></div><div class="specimen-meta"><div><span class="specimen-number"><b>${card.id}</b></span><h2>${card.title}</h2><p>${card.habitatCn} · ${card.technique}</p><span class="specimen-habitat">${card.habitat}</span></div><span class="open-card" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></span></div></a>`).join('');
 </script>
 </body>

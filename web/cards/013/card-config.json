@@ -1,0 +1,32 @@
+{
+  "title": "机械甲龙",
+  "subtitle": "CYBERNETIC ANKYLOSAURUS",
+  "technique": "铁甲镇谷",
+  "tagline": "重甲覆身 · 尾锤镇谷",
+  "edition": "No.013",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "低矮的重装身躯掠过苔岩，尾锤随步伐轻摆。机械甲龙在幽静山谷中留下沉稳足迹。",
+  "habitat": "MOSSY VALLEY",
+  "backMark": "ANKY",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/013/assets/subject.png",
+    "background": "./cards/013/assets/background.png",
+    "text": "./cards/013/assets/text.png",
+    "lineart": "./cards/013/assets/lineart.png",
+    "model": "./cards/013/assets/card.glb"
+  }
+}

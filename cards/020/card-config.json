@@ -1,0 +1,32 @@
+{
+  "title": "机械戟龙",
+  "subtitle": "CYBERNETIC STYRACOSAURUS",
+  "technique": "星棘护境",
+  "tagline": "颈棘列星 · 独角破雾",
+  "edition": "No.020",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "长鼻角指向林间薄雾，颈盾尖棘围成醒目的轮廓。机械戟龙守望紫晶映照的林地。",
+  "habitat": "AMETHYST GROVE",
+  "backMark": "STYR",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./web/assets/card.glb"
+  }
+}

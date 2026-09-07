@@ -1,0 +1,32 @@
+{
+  "title": "机械副栉龙",
+  "subtitle": "CYBERNETIC PARASAUROLOPHUS",
+  "technique": "长冠回响",
+  "tagline": "长冠掠风 · 湖畔回响",
+  "edition": "No.018",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "向后延伸的长冠亮起橙色光带。机械副栉龙停步湖畔，倒影在青绿水面上轻轻摇曳。",
+  "habitat": "ECHO LAKESHORE",
+  "backMark": "PARA",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/018/assets/subject.png",
+    "background": "./cards/018/assets/background.png",
+    "text": "./cards/018/assets/text.png",
+    "lineart": "./cards/018/assets/lineart.png",
+    "model": "./cards/018/assets/card.glb"
+  }
+}

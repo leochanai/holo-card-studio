@@ -8,7 +8,17 @@ export const catalog = [
   {id:'007',title:'机械双脊龙',habitat:'MIST WETLANDS',habitatCn:'迷雾湿地',technique:'雾泽回响',accent:'mist'},
   {id:'008',title:'机械南方巨兽龙',habitat:'STORM PLATEAU',habitatCn:'风暴高原',technique:'高原巨影',accent:'storm'},
   {id:'009',title:'机械角鼻龙',habitat:'CRYSTAL CAVERN',habitatCn:'地下水晶洞',technique:'晶窟守望',accent:'crystal'},
-  {id:'010',title:'机械重爪龙',habitat:'MANGROVE CHANNEL',habitatCn:'红树林河道',technique:'河道追猎',accent:'mangrove'}
+  {id:'010',title:'机械重爪龙',habitat:'MANGROVE CHANNEL',habitatCn:'红树林河道',technique:'河道追猎',accent:'mangrove'},
+  {id:'011',title:'机械三角龙',habitat:'CYCAD FOREST',habitatCn:'苏铁林缘',technique:'林缘重盾',accent:'fern'},
+  {id:'012',title:'机械剑龙',habitat:'SUNSET FERNLAND',habitatCn:'晚霞蕨原',technique:'背剑映霞',accent:'lava'},
+  {id:'013',title:'机械甲龙',habitat:'MOSSY VALLEY',habitatCn:'苔岩山谷',technique:'铁甲镇谷',accent:'desert'},
+  {id:'014',title:'机械腕龙',habitat:'MISTY CONIFERS',habitatCn:'云雾杉林',technique:'云冠漫步',accent:'mist'},
+  {id:'015',title:'机械梁龙',habitat:'SILVER RIVERBANK',habitatCn:'银光河滩',technique:'银尾逐水',accent:'ocean'},
+  {id:'016',title:'机械迷惑龙',habitat:'GOLDEN PLAINS',habitatCn:'金色平原',technique:'巨躯踏原',accent:'desert'},
+  {id:'017',title:'机械禽龙',habitat:'GINKGO WOODLAND',habitatCn:'银杏林地',technique:'棘指巡林',accent:'rainforest'},
+  {id:'018',title:'机械副栉龙',habitat:'ECHO LAKESHORE',habitatCn:'回声湖畔',technique:'长冠回响',accent:'mangrove'},
+  {id:'019',title:'机械慈母龙',habitat:'FERN OASIS',habitatCn:'蕨谷绿洲',technique:'绿洲守望',accent:'fern'},
+  {id:'020',title:'机械戟龙',habitat:'AMETHYST GROVE',habitatCn:'紫晶林地',technique:'星棘护境',accent:'crystal'}
 ];
 
 export const getCard = id => catalog.find(card => card.id === id) || catalog[0];

@@ -1,0 +1,32 @@
+{
+  "title": "机械腕龙",
+  "subtitle": "CYBERNETIC BRACHIOSAURUS",
+  "technique": "云冠漫步",
+  "tagline": "长颈探云 · 巨影穿林",
+  "edition": "No.014",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "修长前肢托起高耸肩背，长颈伸向云雾间的树冠。机械腕龙行走在杉林深处。",
+  "habitat": "MISTY CONIFERS",
+  "backMark": "BRACH",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/014/assets/subject.png",
+    "background": "./cards/014/assets/background.png",
+    "text": "./cards/014/assets/text.png",
+    "lineart": "./cards/014/assets/lineart.png",
+    "model": "./cards/014/assets/card.glb"
+  }
+}

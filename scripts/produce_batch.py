@@ -18,7 +18,7 @@ RENDER = ROOT / 'scripts' / 'render_batch_card.py'
 
 
 def batch_ids() -> set[str]:
-    return {item['id'] for item in json.loads((ROOT / 'cards' / 'batch-003-010.json').read_text(encoding='utf-8'))}
+    return {item['id'] for path in sorted((ROOT / 'cards').glob('batch-*.json')) if path.stem[6:9].isdigit() for item in json.loads(path.read_text(encoding='utf-8'))}
 
 
 def run(command: list[str], log: Path) -> None:
