@@ -1,0 +1,32 @@
+{
+  "title": "机械南方巨兽龙",
+  "subtitle": "CYBERNETIC GIGANOTOSAURUS",
+  "technique": "高原巨影",
+  "tagline": "巨影临境 · 雷霆震野",
+  "edition": "No.008",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "风暴压低天幕，机械南方巨兽龙踏上高原。重型装甲抵住狂风，脚步唤醒沉睡的山岭。",
+  "habitat": "STORM PLATEAU",
+  "backMark": "GIGA",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./web/assets/card.glb"
+  }
+}

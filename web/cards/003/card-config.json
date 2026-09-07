@@ -1,0 +1,32 @@
+{
+  "title": "机械棘龙",
+  "subtitle": "CYBERNETIC SPINOSAURUS",
+  "technique": "潮汐猎手",
+  "tagline": "雷帆破浪 · 潮汐猎行",
+  "edition": "No.003",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "雷电照亮河口，能量沿巨帆奔流。机械棘龙踏过汹涌潮水，追逐水面下的微光。",
+  "habitat": "STORM ESTUARY",
+  "backMark": "SPINO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/003/assets/subject.png",
+    "background": "./cards/003/assets/background.png",
+    "text": "./cards/003/assets/text.png",
+    "lineart": "./cards/003/assets/lineart.png",
+    "model": "./cards/003/assets/card.glb"
+  }
+}

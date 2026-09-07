@@ -1,0 +1,32 @@
+{
+  "title": "机械食肉牛龙",
+  "subtitle": "CYBERNETIC CARNOTAURUS",
+  "technique": "熔原狂奔",
+  "tagline": "双角燃锋 · 踏火而行",
+  "edition": "No.004",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "熔岩在脚下开裂，双角划破灼热气流。机械食肉牛龙以强劲后肢冲向荒原尽头。",
+  "habitat": "LAVA BADLANDS",
+  "backMark": "CARNO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./web/assets/card.glb"
+  }
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.log
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+cards/qa/
+*.tar.gz
+
+# Local artwork sources and offline renders
+/assets/
+/renders/
+/cards/*/assets/
+/cards/*/renders/
+*.blend

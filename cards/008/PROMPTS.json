@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "localCutout": "User-authorized local background removal; scripts/prepare_batch.py",
+  "subject": "Use case: stylized-concept. SUBJECT LAYER for a premium cyberpunk mechanical dinosaur holographic collectible card. Portrait 1024x1536. Exactly ONE mechanical GIGANOTOSAURUS. Defining anatomy: massive giant theropod, very long low skull with blade-like serrated teeth and subtle rough brow, muscular neck, three-fingered forearms, immense powerful hindlegs and one long tail. Powerful broadside three-quarter full-body roaring pose facing left, no horns or sail. Complete readable silhouette contained within x=65..960 y=290..1230, generous clean top 18% and bottom 18% for typography, no cropped tail or feet. Obsidian gunmetal and brushed titanium armor with intricate believable hydraulics, cyan circuit seams and cold white titanium plates, glowing eye, cinematic realistic hard-surface concept illustration, razor sharp engraved plates, premium finish. Genuine transparent RGBA background alpha=0 outside dinosaur. If genuine alpha unavailable use perfectly flat pure WHITE #FFFFFF. No scenery, no ground, no shadow on background, no extra animals, no words, no frame, no checkerboard. Exactly one head, one tail, two arms, two hindlegs.",
+  "background": "Use case: stylized-concept. BACKGROUND LAYER for premium cyberpunk GIGANOTOSAURUS holographic collectible card. Portrait 1024x1536 opaque full canvas cinematic environment painting: vast high altitude rocky plateau beneath monumental storm clouds, distant jagged mesas, lightning at horizon, windswept grasses, dramatic slate blue atmospheric depth. Palette harmonizes with cyan circuit seams and cold white titanium plates. Rich physical texture, immense depth, atmospheric lighting, subdued central 65 percent to allow a dinosaur layered later; top 15 percent and bottom 15 percent quiet and dark to keep typography readable. No creatures, no dinosaur, no people, no text, no border, no baked rainbow foil. Premium detailed realistic science fiction concept art matching a dark neon mechanical dinosaur collection.",
+  "lineart": "Use case: style-transfer. Edit target: attached mechanical GIGANOTOSAURUS subject. Generate REGISTERED LINE ART. Exact same 1024x1536 canvas, EXACT SAME silhouette, scale, pose, anatomy and pixel placement as source. Trace only thin sparse black outline strokes along outer silhouette, eye, jaws and a few major armor seams. Pure white background. No hatching, no gray shading, no filled black regions. Do not redesign, recompose, add or move anything. This is an aligned subtle foil mask overlay, registration matters more than detail. No text.",
+  "sources": [
+    {
+      "id": "008",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-68b962ba-358c-448d-8f57-7d7c17aa39e0.png"
+    },
+    {
+      "id": "008",
+      "kind": "background",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-866dcba9-04b0-4c14-bdb1-3b737d7c3e16.png"
+    },
+    {
+      "id": "008",
+      "kind": "lineart",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-7c89809c-c87f-454a-81bb-694d974ddef4.png"
+    }
+  ]
+}

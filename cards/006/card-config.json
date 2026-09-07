@@ -1,0 +1,32 @@
+{
+  "title": "机械异特龙",
+  "subtitle": "CYBERNETIC ALLOSAURUS",
+  "technique": "峡谷伏击",
+  "tagline": "利爪裂雾 · 蕨谷回声",
+  "edition": "No.006",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "巨蕨遮住峡谷天光，机械异特龙伏身于岩壁之间。三指利爪伸展，破开潮湿的寂静。",
+  "habitat": "FERN CANYON",
+  "backMark": "ALLO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./web/assets/card.glb"
+  }
+}

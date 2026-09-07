@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "localCutout": "User-authorized local background removal; scripts/prepare_batch.py",
+  "subject": "Use case: stylized-concept. SUBJECT LAYER for a premium cyberpunk mechanical dinosaur holographic collectible card. Portrait 1024x1536. Exactly ONE mechanical DILOPHOSAURUS. Defining anatomy: exactly two thin parallel semicircular cranial crests rising along top of head, long slender neck, slender theropod body, long forearms with claws, strong hindlegs and long tail. Graceful alert three-quarter upright walking pose facing right. NO neck frill, NO venom, NO cobra hood. Complete readable silhouette contained within x=65..960 y=290..1230, generous clean top 18% and bottom 18% for typography, no cropped tail or feet. Obsidian gunmetal and brushed titanium armor with intricate believable hydraulics, cyan circuits and subtle ultraviolet crest panels, glowing eye, cinematic realistic hard-surface concept illustration, razor sharp engraved plates, premium finish. Genuine transparent RGBA background alpha=0 outside dinosaur. If genuine alpha unavailable use perfectly flat pure WHITE #FFFFFF. No scenery, no ground, no shadow on background, no extra animals, no words, no frame, no checkerboard. Exactly one head, one tail, two arms, two hindlegs.",
+  "background": "Use case: stylized-concept. BACKGROUND LAYER for premium cyberpunk DILOPHOSAURUS holographic collectible card. Portrait 1024x1536 opaque full canvas cinematic environment painting: moonlit mist wetland with reeds and low cypress silhouettes, still dark water reflecting pale violet moonlight, drifting fog layers, bioluminescent aquatic plants on margins. Palette harmonizes with cyan circuits and subtle ultraviolet crest panels. Rich physical texture, immense depth, atmospheric lighting, subdued central 65 percent to allow a dinosaur layered later; top 15 percent and bottom 15 percent quiet and dark to keep typography readable. No creatures, no dinosaur, no people, no text, no border, no baked rainbow foil. Premium detailed realistic science fiction concept art matching a dark neon mechanical dinosaur collection.",
+  "lineart": "Use case: style-transfer. Edit target: attached mechanical DILOPHOSAURUS subject. Generate REGISTERED LINE ART. Exact same 1024x1536 canvas, EXACT SAME silhouette, scale, pose, anatomy and pixel placement as source. Trace only thin sparse black outline strokes along outer silhouette, eye, jaws and a few major armor seams. Pure white background. No hatching, no gray shading, no filled black regions. Do not redesign, recompose, add or move anything. This is an aligned subtle foil mask overlay, registration matters more than detail. No text.",
+  "sources": [
+    {
+      "id": "007",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-817055ee-9c22-4245-b2e8-9004c0d6652f.png"
+    },
+    {
+      "id": "007",
+      "kind": "background",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-b5bed988-7aee-434b-9959-5b84550f8fff.png"
+    },
+    {
+      "id": "007",
+      "kind": "lineart",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-5ac56e52-3db0-4dc3-9507-a6e968e5793e.png"
+    }
+  ]
+}

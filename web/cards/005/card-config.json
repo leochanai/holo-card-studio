@@ -1,0 +1,32 @@
+{
+  "title": "机械迅猛龙",
+  "subtitle": "CYBERNETIC VELOCIRAPTOR",
+  "technique": "沙影疾猎",
+  "tagline": "羽刃掠沙 · 静电追踪",
+  "edition": "No.005",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "沙粒掠过金属飞羽，静电在趾爪间聚集。机械迅猛龙穿行废墟，循着余温逼近目标。",
+  "habitat": "DESERT RUINS",
+  "backMark": "RAPTOR",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/005/assets/subject.png",
+    "background": "./cards/005/assets/background.png",
+    "text": "./cards/005/assets/text.png",
+    "lineart": "./cards/005/assets/lineart.png",
+    "model": "./cards/005/assets/card.glb"
+  }
+}

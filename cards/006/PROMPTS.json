@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "localCutout": "User-authorized local background removal; scripts/prepare_batch.py",
+  "subject": "Use case: stylized-concept. SUBJECT LAYER for a premium cyberpunk mechanical dinosaur holographic collectible card. Portrait 1024x1536. Exactly ONE mechanical ALLOSAURUS. Defining anatomy: paired small bony ridges above the eyes, deep but elongated skull, moderately long muscular arms with three pronounced clawed fingers, strong hindlegs and long balanced tail. Three-quarter full-body prowling pose looking left. Complete readable silhouette contained within x=65..960 y=290..1230, generous clean top 18% and bottom 18% for typography, no cropped tail or feet. Obsidian gunmetal and brushed titanium armor with intricate believable hydraulics, cyan circuits and emerald reflections, glowing eye, cinematic realistic hard-surface concept illustration, razor sharp engraved plates, premium finish. Genuine transparent RGBA background alpha=0 outside dinosaur. If genuine alpha unavailable use perfectly flat pure WHITE #FFFFFF. No scenery, no ground, no shadow on background, no extra animals, no words, no frame, no checkerboard. Exactly one head, one tail, two arms, two hindlegs.",
+  "background": "Use case: stylized-concept. BACKGROUND LAYER for premium cyberpunk ALLOSAURUS holographic collectible card. Portrait 1024x1536 opaque full canvas cinematic environment painting: primeval canyon with towering tree ferns, mossy wet cliffs, narrow waterfalls on edges, luminous green spores, misty ravine receding behind open center. Palette harmonizes with cyan circuits and emerald reflections. Rich physical texture, immense depth, atmospheric lighting, subdued central 65 percent to allow a dinosaur layered later; top 15 percent and bottom 15 percent quiet and dark to keep typography readable. No creatures, no dinosaur, no people, no text, no border, no baked rainbow foil. Premium detailed realistic science fiction concept art matching a dark neon mechanical dinosaur collection.",
+  "lineart": "Use case: style-transfer. Edit target: attached mechanical ALLOSAURUS subject. Generate REGISTERED LINE ART. Exact same 1024x1536 canvas, EXACT SAME silhouette, scale, pose, anatomy and pixel placement as source. Trace only thin sparse black outline strokes along outer silhouette, eye, jaws and a few major armor seams. Pure white background. No hatching, no gray shading, no filled black regions. Do not redesign, recompose, add or move anything. This is an aligned subtle foil mask overlay, registration matters more than detail. No text.",
+  "sources": [
+    {
+      "id": "006",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-cb571bef-a090-4de9-8647-e09bb34e894e.png"
+    },
+    {
+      "id": "006",
+      "kind": "background",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-7890c5b0-4f08-490a-b29d-7b564c5595ab.png"
+    },
+    {
+      "id": "006",
+      "kind": "lineart",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-b4aa1501-4a84-4379-aaba-b8fb34298017.png"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "机械双脊龙",
+  "subtitle": "CYBERNETIC DILOPHOSAURUS",
+  "technique": "雾泽回响",
+  "tagline": "双冠映月 · 雾泽潜踪",
+  "edition": "No.007",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "月光映亮两道薄冠，雾气绕过修长颈部。机械双脊龙缓步涉水，在芦苇间留下冷光。",
+  "habitat": "MIST WETLANDS",
+  "backMark": "DILO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/007/assets/subject.png",
+    "background": "./cards/007/assets/background.png",
+    "text": "./cards/007/assets/text.png",
+    "lineart": "./cards/007/assets/lineart.png",
+    "model": "./cards/007/assets/card.glb"
+  }
+}

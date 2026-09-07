@@ -1,0 +1,30 @@
+{
+  "title": "机械霸王龙",
+  "subtitle": "CYBERNETIC TYRANNOSAURUS",
+  "technique": "丛林霸主",
+  "tagline": "钢铁觉醒 · 雨林回响",
+  "edition": "No.001",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "雨雾穿过装甲，霓虹沿脊骨亮起。远古的力量，以机械之躯重返热带雨林。",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./assets/card.glb"
+  }
+}

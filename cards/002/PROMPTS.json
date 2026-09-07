@@ -1,0 +1,22 @@
+{
+  "tool": "built-in imagegen",
+  "localCutout": "User authorization carried forward; edge-connected white background removal with scripts/prepare_assets.py",
+  "prompts": [
+    {
+      "step": "mosaSubjectPrompt",
+      "prompt": "Use case: stylized-concept. Premium holographic collectible card SUBJECT LAYER. Portrait 1024x1536. One cyberpunk mechanical MOSASAURUS, a long sleek powerful marine reptile, elongated crocodile-like jaw wide open with titanium conical teeth, precisely FOUR paddle flippers (two anterior, two posterior), long flexible armored torso and powerful crescent caudal tail fin. Clearly an aquatic mosasaur, NOT Tyrannosaurus, no legs, no feet, no wings. Dynamic three-quarter swimming pose with head toward upper right, torso sweeping downward-left and tail curling upward left in an elegant S, complete readable silhouette inside x=70..960 y=270..1250, generous blank top/bottom typography zones. Brushed titanium and obsidian gunmetal armor plates, finely detailed hydraulics, luminous icy-cyan circuit seams, subtle orange-red molten reflected rim light from below, glowing cyan eye, premium realistic cinematic hard-surface concept art matching a high-end cyberpunk dinosaur card collection. Genuine transparent RGBA PNG background, alpha=0 outside animal. No water, no scenery, no bubbles, no ground, no words, no borders, no checkerboard. If actual alpha output is unavailable use perfectly flat PURE WHITE #FFFFFF instead of simulated transparency. Do not draw checkerboard."
+    },
+    {
+      "step": "mosaEditPrompt",
+      "prompt": "Edit target: attached mechanical marine reptile illustration. Fix ANATOMY ONLY. It currently wrongly has TWO tails: one good upper-left curving tail with crescent fin, and one unwanted long lower-right tail. REMOVE the entire extra long pointed tail extending toward bottom-right. Keep exactly ONE continuous body: crocodilian head at upper right -> bulky torso in center -> tapering tail curves left and up to the existing upper-left crescent tail fin. Give it exactly FOUR short tapered PADDLE FLIPPERS attached to the torso: the two large front flippers in the middle can remain; add/retain two smaller hind paddle flippers near the left/rear torso, one can be foreshortened. The rear flippers must look like short paddles, not a second body or tail. Keep mechanical armor identity, cyan circuit lights and orange reflections, same high detail and same head/jaws. Composition within 1024x1536 portrait, all anatomy within x=65..960 y=275..1220, leave bottom 20% clean for text. Pure flat WHITE background, no checkerboard, no text, no border, no ocean. One mosasaur, ONE head, ONE tail, four flippers."
+    },
+    {
+      "step": "mosaBackgroundPrompt",
+      "prompt": "Use case: stylized-concept. BACKGROUND LAYER for a premium cyberpunk mechanical MOSASAURUS trading card. Portrait 1024x1536 opaque artwork. Deep underwater volcanic caldera on the ocean floor, massive basalt rock chimneys framing the left and right, glowing molten orange-red fissures and pillow lava on the bottom, a distant active submarine volcano with a dense dark hydrothermal plume rising through midnight-blue water, drifting suspended particles and fine bubbles, faint cyan blue shafts of light from the surface far above. Powerful cinematic contrast between abyssal teal water and fiery amber lava, richly detailed volcanic rock, realistic underwater atmosphere, sense of immense depth. Keep central 65 percent open dark blue water so the mechanical sea creature can be composited later. Quiet dark top 15 percent and bottom 15 percent for typography. No dinosaur, no animal, no people, no ships, no city, no text, no borders, no rainbow foil baked in. Detailed premium cinematic concept painting in the same style as a cyberpunk collectible series."
+    },
+    {
+      "step": "mosaLinePrompt",
+      "prompt": "Use case: style-transfer. Edit target: attached mechanical Mosasaurus subject layer. Create REGISTERED LINE ART on pure white background. SAME 1024x1536 canvas, EXACT SAME pose, silhouette, position and scale. Trace black thin simplified strokes around outer contours, jaws, eye, key armor plate boundaries and flipper contours. Preserve the single crescent tail curving upper left and head upper right. No hatching, no shading, no large black fills, no text, no border, no checkerboard. Do not recompose or redesign anatomy. This will be overlaid precisely on the source as a subtle holographic contour mask."
+    }
+  ]
+}

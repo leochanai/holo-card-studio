@@ -1,0 +1,31 @@
+{
+  "title": "机械沧龙",
+  "subtitle": "CYBERNETIC MOSASAURUS",
+  "technique": "深渊霸主",
+  "tagline": "熔火潜航 · 深海回响",
+  "edition": "No.002",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "熔岩照亮深海，寒蓝电流掠过装甲。机械沧龙穿越火山烟柱，巡游失落的海底疆域。",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.06
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./assets/card.glb"
+  },
+  "backMark": "MOSA"
+}

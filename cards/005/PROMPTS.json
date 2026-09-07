@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "localCutout": "User-authorized local background removal; scripts/prepare_batch.py",
+  "subject": "Use case: stylized-concept. SUBJECT LAYER for a premium cyberpunk mechanical dinosaur holographic collectible card. Portrait 1024x1536. Exactly ONE mechanical VELOCIRAPTOR. Defining anatomy: slim small feathered dromaeosaur, narrow elongated snout, feathered arms with metallic pennaceous feathers, one rigid long tail, two hindlegs each with raised sickle-shaped second toe claw, no oversized Jurassic Park bulky head. Agile low crouching hunting pose facing right. Complete readable silhouette contained within x=65..960 y=290..1230, generous clean top 18% and bottom 18% for typography, no cropped tail or feet. Obsidian gunmetal and brushed titanium armor with intricate believable hydraulics, cyan and muted amber with iridescent steel feather blades, glowing eye, cinematic realistic hard-surface concept illustration, razor sharp engraved plates, premium finish. Genuine transparent RGBA background alpha=0 outside dinosaur. If genuine alpha unavailable use perfectly flat pure WHITE #FFFFFF. No scenery, no ground, no shadow on background, no extra animals, no words, no frame, no checkerboard. Exactly one head, one tail, two arms, two hindlegs.",
+  "background": "Use case: stylized-concept. BACKGROUND LAYER for premium cyberpunk VELOCIRAPTOR holographic collectible card. Portrait 1024x1536 opaque full canvas cinematic environment painting: ancient ruined stone pylons half buried in windswept dunes, fractured futuristic relic fragments, dusty moonlight, subtle amber dust and teal night sky. Palette harmonizes with cyan and muted amber with iridescent steel feather blades. Rich physical texture, immense depth, atmospheric lighting, subdued central 65 percent to allow a dinosaur layered later; top 15 percent and bottom 15 percent quiet and dark to keep typography readable. No creatures, no dinosaur, no people, no text, no border, no baked rainbow foil. Premium detailed realistic science fiction concept art matching a dark neon mechanical dinosaur collection.",
+  "lineart": "Use case: style-transfer. Edit target: attached mechanical VELOCIRAPTOR subject. Generate REGISTERED LINE ART. Exact same 1024x1536 canvas, EXACT SAME silhouette, scale, pose, anatomy and pixel placement as source. Trace only thin sparse black outline strokes along outer silhouette, eye, jaws and a few major armor seams. Pure white background. No hatching, no gray shading, no filled black regions. Do not redesign, recompose, add or move anything. This is an aligned subtle foil mask overlay, registration matters more than detail. No text.",
+  "sources": [
+    {
+      "id": "005",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-f71dacb9-f8ca-402e-9cb1-2246e2f4a19a.png"
+    },
+    {
+      "id": "005",
+      "kind": "background",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-9af639b8-a2d9-4888-86b3-92aae04c7f76.png"
+    },
+    {
+      "id": "005",
+      "kind": "lineart",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-4c9deaee-783b-4e62-95df-36d2117fffbc.png"
+    }
+  ]
+}

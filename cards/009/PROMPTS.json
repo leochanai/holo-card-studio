@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "localCutout": "User-authorized local background removal; scripts/prepare_batch.py",
+  "subject": "Use case: stylized-concept. SUBJECT LAYER for a premium cyberpunk mechanical dinosaur holographic collectible card. Portrait 1024x1536. Exactly ONE mechanical CERATOSAURUS. Defining anatomy: single prominent blade-like nasal horn on midline above snout, two smaller brow ridges, narrow deep skull, small dorsal osteoderm armor row, compact clawed forearms and two powerful hindlegs, one long tail. Full-body three-quarter stalking stance facing right, unmistakable nasal horn. Complete readable silhouette contained within x=65..960 y=290..1230, generous clean top 18% and bottom 18% for typography, no cropped tail or feet. Obsidian gunmetal and brushed titanium armor with intricate believable hydraulics, cyan circuits and amethyst purple reflections, glowing eye, cinematic realistic hard-surface concept illustration, razor sharp engraved plates, premium finish. Genuine transparent RGBA background alpha=0 outside dinosaur. If genuine alpha unavailable use perfectly flat pure WHITE #FFFFFF. No scenery, no ground, no shadow on background, no extra animals, no words, no frame, no checkerboard. Exactly one head, one tail, two arms, two hindlegs.",
+  "background": "Use case: stylized-concept. BACKGROUND LAYER for premium cyberpunk CERATOSAURUS holographic collectible card. Portrait 1024x1536 opaque full canvas cinematic environment painting: immense subterranean cavern with faceted amethyst and cyan crystals growing from walls and lower corners, subterranean dark pool, faint volumetric shafts through rock cracks, dark open center. Palette harmonizes with cyan circuits and amethyst purple reflections. Rich physical texture, immense depth, atmospheric lighting, subdued central 65 percent to allow a dinosaur layered later; top 15 percent and bottom 15 percent quiet and dark to keep typography readable. No creatures, no dinosaur, no people, no text, no border, no baked rainbow foil. Premium detailed realistic science fiction concept art matching a dark neon mechanical dinosaur collection.",
+  "lineart": "Use case: style-transfer. Edit target: attached mechanical CERATOSAURUS subject. Generate REGISTERED LINE ART. Exact same 1024x1536 canvas, EXACT SAME silhouette, scale, pose, anatomy and pixel placement as source. Trace only thin sparse black outline strokes along outer silhouette, eye, jaws and a few major armor seams. Pure white background. No hatching, no gray shading, no filled black regions. Do not redesign, recompose, add or move anything. This is an aligned subtle foil mask overlay, registration matters more than detail. No text.",
+  "sources": [
+    {
+      "id": "009",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-724418a4-e344-4860-ac00-7859de58da81.png"
+    },
+    {
+      "id": "009",
+      "kind": "background",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-99fe900f-3ba6-4d4a-b3f4-c2f77a8f0406.png"
+    },
+    {
+      "id": "009",
+      "kind": "lineart",
+      "path": "/Users/farghost/.codex/generated_images/01a07a8e-5fba-7931-bf87-8afb3be34fe9/exec-1dfb56f6-0776-49ee-b503-f115fb92e65c.png"
+    }
+  ]
+}

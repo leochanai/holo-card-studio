@@ -1,0 +1,9 @@
+{
+  "name": "neon-genesis-holo-cards",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "start": "node web/server.mjs"
+  }
+}

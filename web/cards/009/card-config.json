@@ -1,0 +1,32 @@
+{
+  "title": "机械角鼻龙",
+  "subtitle": "CYBERNETIC CERATOSAURUS",
+  "technique": "晶窟守望",
+  "tagline": "独角折光 · 晶脉共鸣",
+  "edition": "No.009",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "地下晶脉点亮黑暗，机械角鼻龙的鼻角折射幽光。它沿着水晶裂隙，守望深处的能量源。",
+  "habitat": "CRYSTAL CAVERN",
+  "backMark": "CERATO",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/009/assets/subject.png",
+    "background": "./cards/009/assets/background.png",
+    "text": "./cards/009/assets/text.png",
+    "lineart": "./cards/009/assets/lineart.png",
+    "model": "./cards/009/assets/card.glb"
+  }
+}

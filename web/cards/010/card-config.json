@@ -1,0 +1,32 @@
+{
+  "title": "机械重爪龙",
+  "subtitle": "CYBERNETIC BARYONYX",
+  "technique": "河道追猎",
+  "tagline": "重爪探流 · 根影潜行",
+  "edition": "No.010",
+  "collection": "霓虹纪元 · 机械物种档案",
+  "description": "盘根错节的红树林下，水流卷起细小涟漪。机械重爪龙俯下长吻，以弯曲巨爪探入暗流。",
+  "habitat": "MANGROVE CHANNEL",
+  "backMark": "BARY",
+  "font": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "parameters": {
+    "subjectScale": 1.25,
+    "subjectDepth": 0.4,
+    "backgroundDepth": -0.25,
+    "foil": 0.65
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0,
+      -0.012
+    ]
+  },
+  "assets": {
+    "subject": "./cards/010/assets/subject.png",
+    "background": "./cards/010/assets/background.png",
+    "text": "./cards/010/assets/text.png",
+    "lineart": "./cards/010/assets/lineart.png",
+    "model": "./cards/010/assets/card.glb"
+  }
+}
