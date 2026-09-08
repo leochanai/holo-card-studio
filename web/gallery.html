@@ -16,7 +16,7 @@
 <script type="module">
 import {catalog} from './catalog.js';
 document.querySelector('.card-count strong').textContent=catalog.length;
-document.querySelector('#gallery-grid').innerHTML=catalog.map(card=>`<a class="specimen ${card.accent}" href="./card.html?card=${card.id}" aria-label="查看 No.${card.id} ${card.title}详情"><div class="specimen-art"><div class="card-window"><img src="./previews/${card.id}.png" width="1080" height="1500" alt="${card.title}卡面插画预览"></div></div><div class="specimen-meta"><div><span class="specimen-number"><b>${card.id}</b></span><h2>${card.title}</h2><p>${card.habitatCn} · ${card.technique}</p><span class="specimen-habitat">${card.habitat}</span></div><span class="open-card" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></span></div></a>`).join('');
+document.querySelector('#gallery-grid').innerHTML=catalog.map(card=>`<a class="specimen ${card.accent}" href="./card.html?card=${card.id}" aria-label="查看 No.${card.id} ${card.title}详情"><div class="specimen-art"><div class="card-window"><img src="./previews/gallery/${card.id}.png" width="1080" height="1500" alt="${card.title}卡面插画预览"></div></div><div class="specimen-meta"><div><span class="specimen-number"><b>${card.id}</b></span><h2>${card.title}</h2><p>${card.habitatCn} · ${card.technique}</p><span class="specimen-habitat">${card.habitat}</span></div><span class="open-card" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></span></div></a>`).join('');
 </script>
 </body>
 </html>
