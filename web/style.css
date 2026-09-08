@@ -37,3 +37,5 @@ dialog{background:#0c1210;border-color:#76968a66;width:min(500px,calc(100% - 40p
 @media(max-width:760px){.card-story-note{display:block;order:6;margin:0 7% 22px;padding:18px 0 0;border-top:1px solid var(--line)}.specimen-facts{gap:12px}.specimen-facts>div{grid-template-columns:48px 1fr;gap:14px}.specimen-facts dd{font-size:16px}.specimen-facts small{font-size:12px;margin-top:4px}.story>.eyebrow{order:7}}
 
 #loading[hidden]{display:none}#loading.switching{inset:auto 0 38px;padding:8px;font-size:12px;pointer-events:none}
+
+.actions{flex-wrap:wrap}.actions button[hidden]{display:none}#video-sound[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}

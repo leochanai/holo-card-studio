@@ -28,6 +28,7 @@
     "background": "./cards/010/assets/background.png",
     "text": "./cards/010/assets/text.png",
     "lineart": "./cards/010/assets/lineart.png",
-    "model": "./cards/010/assets/card.glb"
+    "model": "./cards/010/assets/card.glb",
+    "subjectVideo": "./cards/010/assets/subject-motion.mp4"
   }
 }

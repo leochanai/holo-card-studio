@@ -25,7 +25,8 @@
     "background": "./cards/002/assets/background.png",
     "text": "./cards/002/assets/text.png",
     "lineart": "./cards/002/assets/lineart.png",
-    "model": "./cards/002/assets/card.glb"
+    "model": "./cards/002/assets/card.glb",
+    "subjectVideo": "./cards/002/assets/subject-motion.mp4"
   },
   "backMark": "MOSA"
 }

@@ -27,6 +27,7 @@
     "background": "./cards/007/assets/background.png",
     "text": "./cards/007/assets/text.png",
     "lineart": "./cards/007/assets/lineart.png",
-    "model": "./cards/007/assets/card.glb"
+    "model": "./cards/007/assets/card.glb",
+    "subjectVideo": "./cards/007/assets/subject-motion.mp4"
   }
 }

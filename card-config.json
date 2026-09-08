@@ -22,6 +22,7 @@
   },
   "assets": {
     "subject": "./assets/subject.png",
+    "subjectVideo": "./assets/tyrannosaurus-motion.mp4",
     "background": "./assets/background.png",
     "text": "./assets/text.png",
     "lineart": "./assets/lineart.png",
