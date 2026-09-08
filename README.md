@@ -1,52 +1,157 @@
 # 霓虹纪元 · 机械物种闪卡
 
-GitHub: https://github.com/leochanai/holo-card-studio
+基于 Blender 与 Three.js 的交互式 3D 全息卡片网站，以机械恐龙为主题，包含 20 张卡片、精选首页与完整图鉴。卡片详情支持自动赏卡、拖动旋转、翻面、缩放和光影调校。
 
-Sites: https://neon-genesis-holo-cards.leochanai.chatgpt.site （访问受 Sites 权限设置控制）
+- [在线体验](https://neon-genesis-holo-cards.leochanai.chatgpt.site)（访问受 Sites 权限设置控制）
+- [项目仓库](https://github.com/leochanai/holo-card-studio)
+- [制作所用 Skill：holo-card-studio](https://github.com/EverettFish/holo-card-studio)
 
-本地运行：`npm ci --prefix web`，然后 `npm start`。线上静态构建：`npm run build`，输出到 `dist/`。
+## 使用的 Skill
 
-由 Blender 可编辑场景和 Three.js 交互详情页组成的机械恐龙卡片站点。首页保留两张精选卡，图鉴收录二十张卡；详情默认开启自动赏卡，也支持拖动、翻面、缩放与光影调校。
+本项目使用 **holo-card-studio** Skill 进行卡片制作。该 Skill 由 [EverettFish](https://github.com/EverettFish) 提供，将文字描述或参考图转化为分层素材、可编辑 Blender 场景和 Three.js 交互页面，涵盖素材校验、模型导出及浏览器验证流程。
 
-本地启动：`node web/server.mjs`。首页：`http://127.0.0.1:4173/`；图鉴：`http://127.0.0.1:4173/gallery.html`。
+**Skill 地址：[EverettFish/holo-card-studio](https://github.com/EverettFish/holo-card-studio)**
 
-| 编号 | 卡片 | 场景 | 详情 |
-| --- | --- | --- | --- |
-| 001 | 机械霸王龙 | 热带雨林 / TROPICAL RAINFOREST | `http://127.0.0.1:4173/card.html?card=001` |
-| 002 | 机械沧龙 | 海底火山 / SUBMARINE VOLCANO | `http://127.0.0.1:4173/card.html?card=002` |
-| 003 | 机械棘龙 | 雷暴河口 / STORM ESTUARY | `http://127.0.0.1:4173/card.html?card=003` |
-| 004 | 机械食肉牛龙 | 熔岩荒原 / LAVA BADLANDS | `http://127.0.0.1:4173/card.html?card=004` |
-| 005 | 机械迅猛龙 | 沙漠废墟 / DESERT RUINS | `http://127.0.0.1:4173/card.html?card=005` |
-| 006 | 机械异特龙 | 巨蕨峡谷 / FERN CANYON | `http://127.0.0.1:4173/card.html?card=006` |
-| 007 | 机械双脊龙 | 迷雾湿地 / MIST WETLANDS | `http://127.0.0.1:4173/card.html?card=007` |
-| 008 | 机械南方巨兽龙 | 风暴高原 / STORM PLATEAU | `http://127.0.0.1:4173/card.html?card=008` |
-| 009 | 机械角鼻龙 | 地下水晶洞 / CRYSTAL CAVERN | `http://127.0.0.1:4173/card.html?card=009` |
-| 010 | 机械重爪龙 | 红树林河道 / MANGROVE CHANNEL | `http://127.0.0.1:4173/card.html?card=010` |
-| 011 | 机械三角龙 | 苏铁林缘 / CYCAD FOREST | `http://127.0.0.1:4173/card.html?card=011` |
-| 012 | 机械剑龙 | 晚霞蕨原 / SUNSET FERNLAND | `http://127.0.0.1:4173/card.html?card=012` |
-| 013 | 机械甲龙 | 苔岩山谷 / MOSSY VALLEY | `http://127.0.0.1:4173/card.html?card=013` |
-| 014 | 机械腕龙 | 云雾杉林 / MISTY CONIFERS | `http://127.0.0.1:4173/card.html?card=014` |
-| 015 | 机械梁龙 | 银光河滩 / SILVER RIVERBANK | `http://127.0.0.1:4173/card.html?card=015` |
-| 016 | 机械迷惑龙 | 金色平原 / GOLDEN PLAINS | `http://127.0.0.1:4173/card.html?card=016` |
-| 017 | 机械禽龙 | 银杏林地 / GINKGO WOODLAND | `http://127.0.0.1:4173/card.html?card=017` |
-| 018 | 机械副栉龙 | 回声湖畔 / ECHO LAKESHORE | `http://127.0.0.1:4173/card.html?card=018` |
-| 019 | 机械慈母龙 | 蕨谷绿洲 / FERN OASIS | `http://127.0.0.1:4173/card.html?card=019` |
-| 020 | 机械戟龙 | 紫晶林地 / AMETHYST GROVE | `http://127.0.0.1:4173/card.html?card=020` |
+本仓库保存基于该 Skill 制作并扩展的网站、配置和项目脚本。运行现有网站只需安装前端依赖；重新制作卡片还需要源素材及 Blender 等制作环境。
 
-Git 仓库仅保留网站运行素材、配置和生成脚本。`assets/`、`cards/*/assets/`、`*.blend` 与 `renders/` 制作素材和离线效果图仅保留在制作机器本地，不随克隆下载；重新生成卡片需另外恢复这些源素材。
+## 功能
 
-制作机器上，每张 003–010 卡的独立源码都在 `cards/ID/`：输入与四层贴图在 `assets/`，文案和参数在 `card-config.json`，可编辑工程为 `card.blend`，生成提示词为 `PROMPTS.json`，三视图为 `renders/hero.png`、`renders/tilt-left.png`、`renders/tilt-right.png`。发布副本位于 `web/cards/ID/`，图鉴预览为 `web/previews/ID.png`。
+- **精选与图鉴**：首页展示两张精选卡，图鉴收录 No.001–020。
+- **3D 交互**：自动赏卡、拖动旋转、正反面切换与缩放。
+- **全息效果**：分层视差、镭射、线描和闪星效果，可调节光影与景深。
+- **响应式页面**：支持桌面端与移动端浏览。
+- **可编辑制作流程**：通过 Blender 场景导出真实卡牌网格和离线渲染图。
 
-素材以内置图像生成工具创建；用户授权后，对无透明通道的纯白背景主体进行本地抠图，已有真实 alpha 的主体会原样保留。四层统一为 1024×1536，独立文字层由本地字体排版。`scripts/produce_batch.py` 会按卡号准备素材、构建 Blender 场景、导出真实 GLB、渲染三视图并发布到网站。
+## 快速开始
 
-GLB 包含真实卡牌网格及 `web_front`、`web_edge`、`web_back`、`web_gold` 材质角色。glTF 不传递 Blender 自定义全息节点图，网页由 Three.js GLSL 重建视差、镭射、线描和闪星效果，因此与离线渲染可能有细节差异。
+准备 Node.js 与 npm，并使用支持 WebGL 的现代浏览器。
 
-本地服务运行后可执行 `python3 scripts/audit_batch.py` 对 003–010 做文件、配置、GLB、渲染与发布端点审计，结果写入 `cards/batch-verification.json`。该工具不替代浏览器交互验收；本文档不声明浏览器测试已经完成。
+```bash
+git clone https://github.com/leochanai/holo-card-studio.git
+cd holo-card-studio
+npm ci --prefix web
+npm start
+```
 
-### 本批网页检查
+启动后访问：
 
-No.003–010 已逐张在内置浏览器中检查实际卡面；十张缩略图均加载。棘龙卡完成翻面、左右拖动、镭射、缩放、前后景深控制检查。390×844 下图鉴与最长标题详情无横向溢出。最终检查期间无新增控制台错误。页面截图和记录在 `cards/qa/`。保存按钮已触发，但浏览器未返回下载事件，因此下载成功尚未确认；可直接使用各卡 `renders/` 中的成品 PNG。
+| 页面 | 本地地址 |
+| --- | --- |
+| 首页 | [http://127.0.0.1:4173/](http://127.0.0.1:4173/) |
+| 图鉴 | [http://127.0.0.1:4173/gallery.html](http://127.0.0.1:4173/gallery.html) |
+| 卡片详情 | [http://127.0.0.1:4173/card.html?card=001](http://127.0.0.1:4173/card.html?card=001) |
 
-新增食草恐龙 No.011–020 的文案与场景定义位于 `cards/batch-011-020.json`，沿用现有分层素材与 Blender 制作流程。恢复源素材后，执行 `python3 scripts/produce_batch.py 011 012 013 014 015 016 017 018 019 020` 可重建本批卡片。
+详情页通过 `card` 参数选择卡片，编号范围为 `001`–`020`。如需更换端口：
 
-No.011–020 已生成真实透明贴图、独立 Blender 工程、GLB 与三视图，并通过资源、配置、模型材质和 HTTP 链接审计（`cards/herbivore-verification.json`）。本批已检查离线卡面；未追加浏览器交互测试。
+```bash
+PORT=4174 npm start
+```
+
+## 静态构建
+
+在项目根目录执行：
+
+```bash
+npm run build
+```
+
+构建会自动安装 `web/` 依赖，将网站资源复制到 `dist/`，并将 Three.js 依赖整理到 `dist/vendor/three/`。可将 `dist/` 作为静态站点部署目录；每次构建会重新生成该目录。
+
+## 项目结构
+
+```text
+.
+├── README.md
+├── package.json             # 启动与构建命令
+├── card-config.json         # No.001 制作配置
+├── PROMPTS.md               # 素材生成提示词
+├── scripts/                 # 素材处理、Blender 构建、导出与审计脚本
+├── cards/
+│   ├── batch-*.json         # 批次卡片定义
+│   └── <ID>/               # 各卡片制作配置与说明
+├── web/
+│   ├── index.html          # 精选首页
+│   ├── gallery.html        # 图鉴
+│   ├── card.html           # 交互详情页
+│   ├── catalog.js          # 卡片目录数据
+│   ├── card-config.json    # No.001 网页配置
+│   ├── assets/             # 网页公共资源与 No.001 资源
+│   ├── cards/<ID>/         # 其他卡片的网页配置与资源
+│   └── previews/           # 卡片预览图
+└── design-review/          # 设计参考与评审资料
+```
+
+`dist/` 与依赖目录为生成内容。制作源素材 `assets/`、`cards/*/assets/`、Blender 工程 `*.blend` 及离线渲染目录 `renders/`、`cards/*/renders/` 不随 Git 仓库分发，克隆后可以运行网站，但重新生成卡片需另行恢复这些文件。
+
+## 卡片列表
+
+| 编号 | 卡片 | 场景 |
+| --- | --- | --- |
+| 001 | 机械霸王龙 | 热带雨林 / TROPICAL RAINFOREST |
+| 002 | 机械沧龙 | 海底火山 / SUBMARINE VOLCANO |
+| 003 | 机械棘龙 | 雷暴河口 / STORM ESTUARY |
+| 004 | 机械食肉牛龙 | 熔岩荒原 / LAVA BADLANDS |
+| 005 | 机械迅猛龙 | 沙漠废墟 / DESERT RUINS |
+| 006 | 机械异特龙 | 巨蕨峡谷 / FERN CANYON |
+| 007 | 机械双脊龙 | 迷雾湿地 / MIST WETLANDS |
+| 008 | 机械南方巨兽龙 | 风暴高原 / STORM PLATEAU |
+| 009 | 机械角鼻龙 | 地下水晶洞 / CRYSTAL CAVERN |
+| 010 | 机械重爪龙 | 红树林河道 / MANGROVE CHANNEL |
+| 011 | 机械三角龙 | 苏铁林缘 / CYCAD FOREST |
+| 012 | 机械剑龙 | 晚霞蕨原 / SUNSET FERNLAND |
+| 013 | 机械甲龙 | 苔岩山谷 / MOSSY VALLEY |
+| 014 | 机械腕龙 | 云雾杉林 / MISTY CONIFERS |
+| 015 | 机械梁龙 | 银光河滩 / SILVER RIVERBANK |
+| 016 | 机械迷惑龙 | 金色平原 / GOLDEN PLAINS |
+| 017 | 机械禽龙 | 银杏林地 / GINKGO WOODLAND |
+| 018 | 机械副栉龙 | 回声湖畔 / ECHO LAKESHORE |
+| 019 | 机械慈母龙 | 蕨谷绿洲 / FERN OASIS |
+| 020 | 机械戟龙 | 紫晶林地 / AMETHYST GROVE |
+
+## 卡片制作与重建
+
+### 分层素材
+
+卡面使用统一的 **1024 × 1536** 画布，包含四层素材：
+
+| 文件 | 用途 |
+| --- | --- |
+| `subject.png` | 带透明通道的主体 |
+| `background.png` | 场景背景 |
+| `lineart.png` | 线描效果 |
+| `text.png` | 独立排版的透明文字层 |
+
+图像素材通过内置图像生成工具创建，文字层由本地字体排版。制作时需检查透明通道与各层对齐情况。
+
+### 批量重建
+
+项目批量脚本需要 Python 3、Pillow、NumPy 和 Blender。当前脚本使用 macOS 路径：
+
+- Blender：`/Applications/Blender.app/Contents/MacOS/Blender`，配置在 `scripts/produce_batch.py`。
+- 字体：`/System/Library/Fonts/STHeiti Medium.ttc`，配置在 `scripts/prepare_batch.py`。
+
+在其他环境运行前需调整上述路径，并恢复对应卡片的源素材。以下命令重建 No.011–020：
+
+```bash
+python3 scripts/produce_batch.py --force 011 012 013 014 015 016 017 018 019 020
+```
+
+脚本依次准备素材、构建 Blender 场景、导出 GLB、渲染三视图，并更新 `web/` 中的卡片资源与预览图。默认跳过已有完整网页产物的卡片；`--force` 会重新生成并覆盖对应产物。
+
+各卡片制作目录中的主要产物为 `card.blend`、`renders/hero.png`、`renders/tilt-left.png` 和 `renders/tilt-right.png`。
+
+### 渲染说明
+
+GLB 包含真实卡牌网格，使用 `web_front`、`web_edge`、`web_back`、`web_gold` 区分材质角色。glTF 不传递 Blender 自定义全息节点图，网页通过 Three.js GLSL 重建视差、镭射、线描和闪星效果，因此网页与离线渲染可能存在细节差异。
+
+## 检查与验证
+
+在具备本地制作素材、渲染产物及 Python 依赖的环境中，先启动网站，再执行 No.003–010 批次审计：
+
+```bash
+python3 scripts/audit_batch.py --base-url http://127.0.0.1:4173
+```
+
+该脚本检查文件、配置、GLB、渲染和发布端点，将结果写入 `cards/batch-verification.json`。No.011–020 的已有审计记录位于 `cards/herbivore-verification.json`。
+
+资源审计不能替代浏览器交互检查。修改渲染或交互后，应实际检查卡面显示、左右拖动、翻面、缩放、效果控制和移动端布局。仓库中的审计记录反映对应批次的历史结果，不代表当前版本已重新完成所有检查。
