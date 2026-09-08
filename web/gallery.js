@@ -1,9 +1,12 @@
 import {catalog} from './catalog.js';
+import {createDeckAudio} from './deck-audio.js';
 
 const $=selector=>document.querySelector(selector);
 const grid=$('#gallery-grid'),experience=$('#deck-experience'),status=$('#deck-status');
 const drawOne=$('#draw-one'),drawAll=$('#draw-all'),drawManual=$('#draw-manual'),returnBox=$('#return-box'),toolbar=$('#grid-toolbar');
 const handPicker=$('#hand-picker');
+const audio=createDeckAudio();
+for(const target of [drawOne,drawAll,drawManual,returnBox,$('#collect-all'),handPicker])target.addEventListener('click',()=>audio.unlock(),{capture:true});
 let deck,busy=false,lastCard=null,handIndex=-1,chosenHand=-1;
 let gridImagesReady;
 let handTargets=[];
@@ -33,6 +36,7 @@ async function resetView(){
  }finally{lock(false);}
 }
 async function collectGrid(){
+ audio.play('collect');
  const origins=[...grid.querySelectorAll('.card-window')].map(item=>item.getBoundingClientRect());
  experience.hidden=false;grid.hidden=true;toolbar.hidden=true;document.body.dataset.view='box';returnBox.hidden=true;
  window.scrollTo({top:0,behavior:'instant'});
@@ -201,7 +205,7 @@ drawAll.addEventListener('click',async()=>{
 });
 
 try{
- const {createDeckScene}=await import('./deck-scene.js');deck=await createDeckScene($('#deck-stage'),catalog,{onHandLayout:layoutHand});$('#deck-loading').remove();lock(false);
+ const {createDeckScene}=await import('./deck-scene.js');deck=await createDeckScene($('#deck-stage'),catalog,{onHandLayout:layoutHand,onSound:audio.play});$('#deck-loading').remove();lock(false);
 }catch(error){
  console.error(error);$('#deck-loading').textContent='三维卡盒暂不可用，仍可展开全部卡牌。';status.textContent='点击「全部抽出」浏览完整图鉴。';drawAll.disabled=false;
 }

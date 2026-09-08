@@ -6,7 +6,7 @@ const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
 const mix=THREE.MathUtils.lerp;
 
 // A small, actual 3D box: cards live between the walls and leave through its lid.
-export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
+export async function createDeckScene(host, catalog, {onHandLayout=()=>{},onSound=()=>{}}={}){
  const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});
  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
  renderer.setClearColor(0x080c0c,0);
@@ -137,10 +137,12 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
   if(mode==='manual')return chooseHand(catalog.findIndex(card=>card.id===id));
   const keepOpen=mode==='revealed'||mode==='open';await recall({closeLid:false});await face(0,id);reset(keepOpen);busy=true;if(!keepOpen)await open();
   const card=cards[0].group;
+  onSound('draw');
   await animate(780,t=>{card.position.y=mix(-.06,3.1,t);rig.position.y=mix(-.3,-1.32,t);rig.rotation.z=mix(-.065,.025,t);camera.zoom=mix(1.3,.95,t);camera.updateProjectionMatrix();});
   scene.attach(card);const pos=card.position.clone(),rot=card.rotation.clone();
   await animate(850,t=>{card.position.set(mix(pos.x,0,t),mix(pos.y,.12,t),mix(pos.z,1.6,t));card.rotation.set(mix(rot.x,0,t),mix(rot.y,-.13,t),mix(rot.z,-.025,t));rig.position.x=(camera.aspect<1?-1.65:-2.55)*t;rig.position.y=mix(-1.32,-.8,t);rig.position.z=(camera.aspect<1?-6:-3)*t;rig.scale.setScalar(mix(1,.9,t));camera.zoom=mix(.95,1.75,t);camera.updateProjectionMatrix();});
   await animate(240,()=>{});
+  onSound('flip');
   await animate(1000,t=>{card.rotation.y=mix(-.13,Math.PI,t);card.rotation.z=mix(-.025,0,t);});
   mode='revealed';busy=false;render();start();
  }
@@ -149,6 +151,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
    if(manual)return projectedCards();
    busy=true;mode='spreading';viewedIndex=-1;hovered=-1;
    const from=cards.map(({group})=>({p:group.position.clone(),r:group.rotation.clone(),s:group.scale.x}));
+   onSound('shuffle');
    await animate(500,t=>{cards.forEach(({group},i)=>{group.position.lerpVectors(from[i].p,handPoses[i].p,t);group.rotation.y=mix(from[i].r.y,Math.PI,t);group.rotation.z=mix(from[i].r.z,handPoses[i].r.z,t);group.scale.setScalar(mix(from[i].s,handPoses[i].s,t));});});
    return projectedCards();
   }
@@ -157,6 +160,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
   cards.forEach(({group})=>scene.attach(group));
   const from=cards.map(({group})=>({p:group.position.clone(),r:group.rotation.clone()}));
   const narrow=camera.aspect<1,boxTarget=handBoxPosition();
+  onSound('shuffle');
   await animate(1100,t=>{
    rig.position.set(manual?boxTarget.x*t:0,mix(-1.32,manual?boxTarget.y:-1.3,t),(manual?boxTarget.z:-2.5)*t);rig.scale.setScalar(mix(1,.78,t));
    if(manual){camera.zoom=mix(.95,1.3,t);camera.updateProjectionMatrix();}
@@ -202,6 +206,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
  }
  function chooseHand(index){
   if(mode!=='manual'||busy||index<0||index>=cards.length)return;
+  onSound('flip');
   viewedIndex=index;
   hoverCard(index);
  }
@@ -212,6 +217,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
  async function recall({closeLid=true}={}){
   if(mode==='manual'){busy=true;mode='gathering';await gather({closeLid});return;}
   if(mode!=='revealed')return;
+  onSound('collect');
   busy=true;const card=cards[shownIndex].group,start=card.position.clone(),rotation=card.rotation.clone();
   const boxPosition=rig.position.clone(),boxScale=rig.scale.x;
   await animate(650,t=>{
@@ -222,6 +228,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
   });
   rig.attach(card);card.rotation.set(0,0,0);card.position.set(0,3.1,.34);
   await animate(550,t=>{card.position.y=mix(3.1,-.06,t);rig.position.y=mix(-1.32,-.3,t);camera.zoom=mix(.95,1.3,t);camera.updateProjectionMatrix();});
+  onSound('settle');
   if(closeLid)await animate(350,t=>{lid.rotation.x=mix(-1.95,0,t);rig.position.y=mix(-.3,0,t);camera.zoom=mix(1.3,1.65,t);camera.updateProjectionMatrix();});reset(!closeLid);
  }
  function prepareGather(){
@@ -239,6 +246,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
   render();return projectedCards();
  }
  async function gather({closeLid=true}={}){
+  onSound('collect');
   renderer.domElement.style.visibility='';
   const from=cards.map(({group})=>({p:group.position.clone(),r:group.rotation.clone(),s:group.scale.x})),boxStart=rig.position.clone(),boxScale=rig.scale.x,zoomStart=camera.zoom;
   await animate(700,t=>{
@@ -254,6 +262,7 @@ export async function createDeckScene(host, catalog, {onHandLayout=()=>{}}={}){
   await animate(650,t=>{
    cards.forEach(({group})=>{group.position.y=mix(3.1,-.06,t);});rig.position.y=mix(-1.32,-.3,t);camera.zoom=mix(.95,1.3,t);camera.updateProjectionMatrix();
   });
+  onSound('settle');
   if(closeLid)await animate(400,t=>{lid.rotation.x=mix(-1.95,0,t);rig.position.y=mix(-.3,0,t);camera.zoom=mix(1.3,1.65,t);camera.updateProjectionMatrix();});reset(!closeLid);
  }
  function projectedCards(){
