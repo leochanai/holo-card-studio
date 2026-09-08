@@ -3,20 +3,32 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#030708">
 <title>卡片图鉴 · 霓虹纪元</title><meta name="description" content="浏览霓虹纪元机械物种闪卡图鉴。选择一张卡片，进入可旋转、翻面的全息详情。"><link rel="stylesheet" href="./portal.css">
+<link rel="stylesheet" href="./gallery.css">
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
 <link rel="stylesheet" href="./icons.css"><link rel="stylesheet" href="./brand.css"></head>
-<body class="gallery-page">
+<body class="gallery-page" data-view="box">
 <header class="site-header"><a class="brand" href="./" aria-label="霓虹纪元首页"><img class="brand-mark" src="./assets/brand/neon-genesis.svg" width="34" height="38" alt="" aria-hidden="true"><span>霓虹纪元<small>NEON GENESIS</small></span></a><span class="header-note">MECHANICAL LIFE ARCHIVE</span><a class="header-link" href="./gallery.html" aria-current="page">卡片图鉴 <span><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></span></a></header>
 <main class="gallery-main">
 <nav class="breadcrumb" aria-label="当前位置"><a href="./">首页</a><span aria-hidden="true">/</span><span aria-current="page">卡片图鉴</span></nav>
-<div class="gallery-heading"><div><p class="eyebrow">COLLECTION 01 / 霓虹纪元</p><h1>机械物种图鉴</h1><p>选择一张闪卡，走进它的世界。<br>转动、翻面，探索光与机械的另一种可能。</p></div><div class="card-count"><strong>20</strong>张已收录</div></div>
-<section id="gallery-grid" class="gallery-grid" aria-label="全部闪卡"></section>
+<div class="gallery-heading"><div><p class="eyebrow">COLLECTION 01 / 霓虹纪元</p><h1>机械物种图鉴</h1><p id="collection-intro">一盒机械物种，二十种相遇。<br>抽一张交给偶然，或展开整个世界。</p></div><div class="card-count"><strong>20</strong>张已收录</div></div>
+<section id="deck-experience" class="deck-experience" aria-label="收藏卡盒">
+<div class="deck-stage-wrap">
+<div class="deck-annotation" aria-hidden="true"><span>VOL. 01</span><span>THE COLLECTOR’S BOX</span></div>
+<div id="deck-stage" role="img" aria-label="霓虹纪元三维收藏卡盒"><p id="deck-loading" role="status">正在打开收藏盒…</p><div id="hand-picker" class="hand-picker" role="group" aria-label="手动选牌，左右方向键切换，回车抽取" hidden></div></div>
+<div class="deck-edition" aria-hidden="true"><span>20 SPECIMENS</span><span>ONE COLLECTION</span></div>
+</div>
+<div class="draw-result-slot">
+<div class="draw-result" id="draw-result" hidden><span id="draw-number"></span><h2 id="draw-title"></h2><a id="draw-detail" href="./card.html?card=001">走进它的世界 <svg class="icon" aria-hidden="true"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></a></div>
+</div>
+<div class="deck-actions"><button id="draw-one" class="deck-button primary" type="button" disabled><svg class="icon" aria-hidden="true"><use href="./assets/phosphor/icons.svg#sparkle"></use></svg><span>随机抽一张</span></button><button id="draw-manual" class="deck-button secondary" type="button" aria-pressed="false" disabled>手动抽卡</button><button id="draw-all" class="deck-button secondary" type="button" disabled>全部抽出 <svg class="icon" aria-hidden="true"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></button></div>
+<div class="deck-caption"><p id="deck-status" role="status" aria-live="polite">每一张，都是一个待开启的世界。</p><button id="return-box" class="quiet-button" type="button" hidden>收回卡盒</button></div>
+</section>
+<div id="grid-toolbar" class="grid-toolbar" hidden><span>完整图鉴 · <span class="total-count">20</span> 张卡牌</span><button id="collect-all" class="quiet-button" type="button">收回卡盒 <svg class="icon" aria-hidden="true"><use href="./assets/phosphor/icons.svg#arrow-counter-clockwise"></use></svg></button></div>
+<section id="gallery-grid" class="gallery-grid" aria-label="全部闪卡" hidden></section>
+<noscript><p>开启 JavaScript 后即可抽卡。也可以<a href="./card.html?card=001">直接浏览卡牌</a>。</p></noscript>
 
 </main>
 <footer class="site-footer"><span class="collection-signature"><img class="brand-mark" src="./assets/brand/neon-genesis.svg" width="34" height="38" alt="" aria-hidden="true"><span>NEON GENESIS<small>MECHANICAL LIFE ARCHIVE</small></span></span><span class="footer-message">光随手动，画有余深。<small>DESIGNED TO BE SEEN IN MOTION</small></span></footer>
-<script type="module">
-import {catalog} from './catalog.js';
-document.querySelector('.card-count strong').textContent=catalog.length;
-document.querySelector('#gallery-grid').innerHTML=catalog.map(card=>`<a class="specimen ${card.accent}" href="./card.html?card=${card.id}" aria-label="查看 No.${card.id} ${card.title}详情"><div class="specimen-art"><div class="card-window"><img src="./previews/gallery/${card.id}.png" width="1080" height="1500" alt="${card.title}卡面插画预览"></div></div><div class="specimen-meta"><div><span class="specimen-number"><b>${card.id}</b></span><h2>${card.title}</h2><p>${card.habitatCn} · ${card.technique}</p><span class="specimen-habitat">${card.habitat}</span></div><span class="open-card" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/phosphor/icons.svg#arrow-up-right"></use></svg></span></div></a>`).join('');
-</script>
+<script type="module" src="./gallery.js"></script>
 </body>
 </html>
