@@ -115,7 +115,7 @@ function backTexture(texture){
 function updateCardDetails(card){
  const cardId=card.id;
  document.title=config.title+' · '+config.edition;
- $('habitat-cn').textContent=card.habitatCn;$('header-edition').textContent=config.edition;$('card-seal').textContent=cardId.slice(1);
+ $('habitat-cn').textContent=card.habitatCn;$('header-edition').textContent=config.edition;
  document.querySelector('.display-label').textContent='MECHANICAL LIFE / '+(config.habitat||card.habitat);
  $('card-picker').value=cardId;
  const index=catalog.findIndex(item=>item.id===cardId);
