@@ -84,6 +84,8 @@ npm run build
 
 `dist/` 与依赖目录为生成内容。制作源素材 `assets/`、`cards/*/assets/`、Blender 工程 `*.blend` 及离线渲染目录 `renders/`、`cards/*/renders/` 不随 Git 仓库分发，克隆后可以运行网站，但重新生成卡片需另行恢复这些文件。
 
+网页分发视频经过 H.264 CRF 18 重编码以控制下载体积，保留原始画面尺寸、帧数和音轨；本地生成目录保留原始文件。
+
 完整视频提示词、参考图路径和生成任务编号见 [20 张卡片的视频提示词](docs/video-prompts.md)。
 
 ## 卡片列表
